@@ -1,0 +1,182 @@
+{
+  "schema": 1,
+  "gerado_em": "2026-09-30T00:03:26Z",
+  "modulos": [
+    {
+      "id": "rotinas",
+      "nome": "Rotinas e Cron",
+      "icone": "rotina",
+      "descricao": "Rotinas agendadas, execuções, logs, falhas e alertas do agente.",
+      "subdominio": null
+    },
+    {
+      "id": "conteudo",
+      "nome": "Conteúdo e Mídias",
+      "icone": "midia",
+      "descricao": "Tudo que o agente cria: textos, imagens, vídeos, áudios, carrosséis e posts.",
+      "subdominio": null
+    },
+    {
+      "id": "dashboards",
+      "nome": "Dashboards e Relatórios",
+      "icone": "dashboard",
+      "descricao": "Dashboards, relatórios, briefings, pesquisas e análises.",
+      "subdominio": null
+    },
+    {
+      "id": "trafego",
+      "nome": "Tráfego Pago",
+      "icone": "trafego",
+      "descricao": "Campanhas, criativos, ROAS, CAC e métricas de mídia paga.",
+      "subdominio": null
+    },
+    {
+      "id": "gestao",
+      "nome": "Gestão e Empresa",
+      "icone": "gestao",
+      "descricao": "Indicadores de gestão, faturamento, lucro, ROI e operação da empresa.",
+      "subdominio": null
+    },
+    {
+      "id": "briefings",
+      "nome": "Briefings e Demandas",
+      "icone": "briefing",
+      "descricao": "Briefings diários, resumos de grupos e demandas em aberto.",
+      "subdominio": null
+    },
+    {
+      "id": "integracoes",
+      "nome": "Integrações",
+      "icone": "integracao",
+      "descricao": "ClickUp, Sheets, Slack, Notion, Meta Ads, Google Ads e webhooks.",
+      "subdominio": null
+    },
+    {
+      "id": "automacoes",
+      "nome": "Automações IA",
+      "icone": "automacao",
+      "descricao": "Agentes, pipelines, workflows e orquestrações multi-agente.",
+      "subdominio": null
+    },
+    {
+      "id": "infra",
+      "nome": "Infra e Deploys",
+      "icone": "infra",
+      "descricao": "Deploys, commits, versões, nginx, DNS, certificados e incidentes.",
+      "subdominio": null
+    }
+  ],
+  "subsites": [],
+  "stats": {
+    "total": 1,
+    "por_modulo": {
+      "integracoes": 1,
+      "rotinas": 0,
+      "conteudo": 0,
+      "dashboards": 0,
+      "trafego": 0,
+      "gestao": 0,
+      "briefings": 0,
+      "automacoes": 0,
+      "infra": 0
+    },
+    "com_pagina": 1,
+    "com_midia": 0,
+    "duracao_media_s": 4.2,
+    "costo_total_usd": null,
+    "falhas_cron": 0,
+    "cron_pendentes": 0
+  },
+  "cron": [
+    {
+      "job": "briefing-diario",
+      "nome": "Briefing diário",
+      "modulo": "rotinas",
+      "criado_em": "2026-09-29T21:04:59Z",
+      "agenda": "todo dia 06:00",
+      "estado": "ok",
+      "atualizado_em": "2026-09-30T00:03:26Z",
+      "historico": [
+        {
+          "em": "2026-09-29T21:04:59Z",
+          "estado": "rodando",
+          "duracao_s": null,
+          "mensagem": ""
+        },
+        {
+          "em": "2026-09-29T21:04:59Z",
+          "estado": "ok",
+          "duracao_s": 0.206,
+          "mensagem": ""
+        },
+        {
+          "em": "2026-09-30T00:03:26Z",
+          "estado": "ok",
+          "duracao_s": 0.412,
+          "mensagem": ""
+        }
+      ],
+      "ultima_duracao_s": 0.412,
+      "ultima_publicacao": null,
+      "falhas_consecutivas": 0
+    },
+    {
+      "job": "sync-integracoes",
+      "nome": "Sincronização de integrações",
+      "modulo": "integracoes",
+      "criado_em": "2026-09-29T21:05:00Z",
+      "agenda": "a cada 30 min",
+      "estado": "ok",
+      "atualizado_em": "2026-09-30T00:03:26Z",
+      "historico": [
+        {
+          "em": "2026-09-29T21:05:00Z",
+          "estado": "rodando",
+          "duracao_s": null,
+          "mensagem": ""
+        },
+        {
+          "em": "2026-09-29T21:05:00Z",
+          "estado": "ok",
+          "duracao_s": 0.9,
+          "mensagem": ""
+        },
+        {
+          "em": "2026-09-30T00:03:26Z",
+          "estado": "ok",
+          "duracao_s": 0.7,
+          "mensagem": ""
+        }
+      ],
+      "ultima_duracao_s": 0.7,
+      "ultima_publicacao": null,
+      "falhas_consecutivas": 0
+    }
+  ],
+  "publicacoes": [
+    {
+      "id": "20260930-0003-composio-1000-toolkits-mapeados-contra-as-de",
+      "modulo": "integracoes",
+      "tipo": "analise",
+      "titulo": "Composio: 1000 toolkits mapeados contra as demandas",
+      "resumo": "Catalogo completo analisado (1000 toolkits, 40.702 tools). Estado real: 4 contas vinculadas e verificadas por leitura (github, gmail, googledrive, linkedin); as outras 996 seguem inacessiveis, porque conexao e por toolkit e nao por conta. Skill nova + 6 skills ajustadas + 2 commits na base de contexto. Descobertas fora do escopo: site na Vercel e LinkedIn sem a marca JF Dev.",
+      "publicado_em": "2026-09-30T00:03:18Z",
+      "pagina_dedicada": true,
+      "tags": [
+        "composio,integracoes,whatsapp,clickup,instagram,ads,github,gmail,linkedin"
+      ],
+      "capa": null,
+      "n_midias": 0,
+      "tem_log": false,
+      "duracao_s": null,
+      "modelo": "space-bunny-free",
+      "provedor": "opencode-go",
+      "tokens_in": 1955,
+      "tokens_out": 0,
+      "tokens_estimados": true,
+      "custo_usd": null,
+      "job": null,
+      "origem": "agente"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Central de Operações Hermes - visão global de todas as operações, tarefas, rotinas, conteúdos e decisões executadas pelo agente">
+  <title>Central de Operações Hermes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico?v=1fa5835" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css?v=1fa5835">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <div class="header-brand">
+          <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"/>
+            <path d="M8 16L14 22L24 10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Central de Operações</span>
+        </div>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <a href="#feed" class="nav-link active" aria-current="page">Publicações</a>
+          <a href="#status" class="nav-link">Rotinas</a>
+          <a href="#modulos" class="nav-link">Módulos</a>
+          <a href="#painel-status" class="nav-link">Status</a>
+        </nav>
+        <div class="header-actions">
+          <span class="status-badge" aria-live="polite">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text">Carregando…</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content" role="main">
+      <!-- ============================================================
+           HERO + ESTATÍSTICAS GLOBAIS
+           ============================================================ -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Central de Operações Hermes</p>
+            <h1 id="hero-title" class="hero-title">Tudo que o agente executou</h1>
+            <p class="hero-description">
+              Visão global e observabilidade de tudo que o agente Hermes constrói e executa:
+              rotinas e execuções, conteúdos e mídias, dashboards e relatórios, campanhas,
+              integrações e deploys. Cada publicação fica registrada por data e hora,
+              da mais recente para a mais antiga.
+            </p>
+            <div class="hero-actions">
+              <a href="#feed" class="btn btn-primary">Ver publicações</a>
+              <a href="#painel-status" class="btn btn-ghost">Status das rotinas</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="stats-strip" style="grid-template-columns: 1fr;">
+              <div class="stat-tile">
+                <div class="stat-value" data-stat="total">—</div>
+                <div class="stat-label">Publicações</div>
+              </div>
+              <div class="stat-tile">
+                <div class="stat-value" data-stat="duracao">—</div>
+                <div class="stat-label">Duração média</div>
+              </div>
+              <div class="stat-tile">
+                <div class="stat-value" data-stat="falhas">—</div>
+                <div class="stat-label">Rotinas com falha</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           FEED DE PUBLICAÇÕES
+           ============================================================ -->
+      <section id="feed" class="feed-section" aria-labelledby="feed-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="feed-title" class="section-title">Publicações</h2>
+            <p class="section-description">
+              Tudo que o agente produziu, ordenado da mais recente para a mais antiga.
+            </p>
+          </header>
+
+          <div class="filters-bar">
+            <div class="filters-inner section-inner">
+              <div class="search-field">
+                <svg class="search-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M11 11L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <label class="sr-only" for="filtro-busca">Buscar publicações</label>
+                <input id="filtro-busca" type="search" placeholder="Buscar por título, resumo, tag ou rotina…"
+                       autocomplete="off" spellcheck="false">
+              </div>
+              <label class="sr-only" for="filtro-modulo">Filtrar por módulo</label>
+              <select id="filtro-modulo" class="filter-select">
+                <option value="">Todos os módulos</option>
+              </select>
+              <label class="sr-only" for="filtro-ordem">Ordenar por</label>
+              <select id="filtro-ordem" class="filter-select">
+                <option value="recentes">Mais recentes primeiro</option>
+                <option value="antigas">Mais antigas primeiro</option>
+                <option value="titulo">Título (A–Z)</option>
+              </select>
+              <button type="button" id="filtro-limpar" class="filters-clear">Limpar</button>
+              <span id="feed-resumo" class="filters-summary" aria-live="polite">carregando…</span>
+            </div>
+          </div>
+
+          <!-- nomes legíveis dos módulos, usados nos cards -->
+          <div hidden>
+            <span data-nome-modulo="rotinas" data-nome="Rotinas e Cron"></span>
+            <span data-nome-modulo="conteudo" data-nome="Conteúdo e Mídias"></span>
+            <span data-nome-modulo="dashboards" data-nome="Dashboards e Relatórios"></span>
+            <span data-nome-modulo="trafego" data-nome="Tráfego Pago"></span>
+            <span data-nome-modulo="gestao" data-nome="Gestão e Empresa"></span>
+            <span data-nome-modulo="briefings" data-nome="Briefings e Demandas"></span>
+            <span data-nome-modulo="integracoes" data-nome="Integrações"></span>
+            <span data-nome-modulo="automacoes" data-nome="Automações IA"></span>
+            <span data-nome-modulo="infra" data-nome="Infra e Deploys"></span>
+          </div>
+
+          <div id="feed-grid" class="feed-grid">
+            <p class="load-state">Carregando publicações…</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           STATUS DE ROTINAS E INTEGRAÇÕES
+           ============================================================ -->
+      <section id="painel-status" class="modules-section" aria-labelledby="painel-status-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="painel-status-title" class="section-title">Rotinas e Integrações</h2>
+            <p class="section-description">
+              Estado de cada cron job e integração: o que rodou, o que falhou e o que está pendente.
+            </p>
+          </header>
+          <div id="status-grid" class="status-panel">
+            <p class="load-state">Carregando status…</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           MÓDULOS
+           ============================================================ -->
+      <section id="modulos" class="modules-section" aria-labelledby="modulos-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="modulos-title" class="section-title">Módulos</h2>
+            <p class="section-description">
+              Cada publicação é arquivada no módulo correspondente. Clique para filtrar o feed.
+            </p>
+          </header>
+          <div id="module-grid" class="module-grid"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           PAINÉIS EM SUBDOMÍNIO
+           ============================================================ -->
+      <section id="subsites" class="modules-section" aria-labelledby="subsites-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="subsites-title" class="section-title">Painéis em subdomínio</h2>
+            <p class="section-description">
+              Dashboards e briefings que podem viver como subsistemas próprios da central.
+            </p>
+          </header>
+          <div id="subsite-grid" class="subsite-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+  <p class="footer-note">
+    <strong>Sobre esta versão.</strong> La Central de Operações roda em servidor
+    próprio, com nginx, TLS, autenticação e publicação automatizada. Esta e a
+    versão pública de demonstração: a instância real mantém credencial de deploy,
+    logs de execução e dados operacionais, e por isso não fica disponível
+    publicamente.
+  </p>
+
+      <div class="footer-inner">
+        <div class="footer-main">
+          <p class="footer-brand">Central de Operações Hermes</p>
+          <p class="footer-tagline">
+            Vigia a si mesma — atualizado em <time id="footer-atualizado">—</time>
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/JonasFilhoDev/central_operacoes_demo" target="_blank" rel="noopener" class="footer-link">Repositório</a>
+          <a href="./data/index.json" class="footer-link">Manifesto</a>
+          <a href="./health.json" class="footer-link">Health</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/feed.js?v=1fa5835"></script>
+  <script src="./js/app.js?v=1fa5835"></script>
+</body>
+</html>

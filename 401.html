@@ -1,0 +1,30 @@
+# Erro 401 - Credencial ausente ou invalida
+# Nao deixe este arquivo "vazio": um corpo de resposta minimo faz o
+# navegador comportamento de ways diferentes, e sem o no-store a resposta
+# pode ser cacheada e reexibida depois de trocar a senha.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>401 - Acesso Restrito</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Space Grotesk',-apple-system,'Segoe UI',sans-serif;
+         background:#000;color:#fff;min-height:100vh;display:flex;
+         align-items:center;justify-content:center;padding:2rem;line-height:1.6}
+    .box{max-width:520px;text-align:center}
+    h1{font-size:clamp(3rem,10vw,6rem);font-weight:700;letter-spacing:-.03em;
+       line-height:1;margin-bottom:1rem}
+    p{color:#a0a0a8;font-size:1.125rem;margin-bottom:2rem}
+    a{color:#fff;font-weight:500}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>401</h1>
+    <p>Acesso restrito. Use o usuario e a senha da central de operacoes.</p>
+    <p><a href="/">Tentar novamente</a></p>
+  </div>
+</body>
+</html>

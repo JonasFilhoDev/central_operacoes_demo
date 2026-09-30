@@ -1,0 +1,6 @@
+# Python bytecode — cache de interpretador, nunca versionado
+__pycache__/
+*.py[cod]
+
+# Credencial do deploy: vive em ~/.site_auth, nunca no repositorio
+.site_auth

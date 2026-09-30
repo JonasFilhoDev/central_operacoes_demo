@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Publicação da Central de Operações Hermes">
+  <title>Publicação — Central de Operações Hermes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico?v=__ASSET_SHA__" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css?v=__ASSET_SHA__">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <div class="header-brand">
+          <a href="./" class="header-brand" style="text-decoration:none;">
+            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="currentColor"/>
+              <path d="M8 16L14 22L24 10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">Central de Operações</span>
+          </a>
+        </div>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <a href="./" class="nav-link">Publicações</a>
+          <a href="./#painel-status" class="nav-link">Rotinas</a>
+          <a href="./#modulos" class="nav-link">Módulos</a>
+        </nav>
+        <div class="header-actions">
+          <span class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text">Central de Operações</span>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main class="pub-page" role="main">
+      <div class="section-inner">
+        <a class="pub-back" href="./">← Voltar para as publicações</a>
+
+        <div id="pub-status" class="load-state">Carregando publicação…</div>
+
+        <div id="pub-grid" class="pub-page-grid" hidden>
+          <article class="pub-article">
+            <div class="pub-topline">
+              <span class="pub-module" id="pub-modulo">—</span>
+              <time class="pub-time" id="pub-data">—</time>
+              <span class="badge badge-outline" id="pub-tipo">—</span>
+            </div>
+            <h1 class="pub-article-title" id="pub-titulo">—</h1>
+            <div class="pub-article-meta" id="pub-meta"></div>
+            <div class="pub-content" id="pub-conteudo"></div>
+            <div id="pub-midia"></div>
+            <div id="pub-tags" class="pub-tags" style="margin-top: var(--space-xl);"></div>
+            <div id="pub-links" style="margin-top: var(--space-lg);"></div>
+          </article>
+
+          <aside class="pub-aside" aria-label="Detalhes operacionais">
+            <div class="aside-card">
+              <h2 class="aside-title">Operacional</h2>
+              <ul class="aside-list" id="pub-operacional"></ul>
+            </div>
+            <div class="aside-card">
+              <h2 class="aside-title">Publicações anteriores</h2>
+              <ul class="aside-list" id="pub-anteriores"></ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <p class="footer-brand">Central de Operações Hermes</p>
+        <p class="footer-tagline">Tudo que o agente executa fica registrado aqui.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/feed.js?v=__ASSET_SHA__"></script>
+  <script src="./js/publicacao.js?v=__ASSET_SHA__"></script>
+</body>
+</html>
