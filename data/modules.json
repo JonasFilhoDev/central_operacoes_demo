@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "modules": [
+    {
+      "id": "rotinas",
+      "nome": "Rotinas e Cron",
+      "icone": "rotina",
+      "descricao": "Rotinas agendadas, execuções, logs, falhas e alertas do agente.",
+      "subdominio": null
+    },
+    {
+      "id": "conteudo",
+      "nome": "Conteúdo e Mídias",
+      "icone": "midia",
+      "descricao": "Tudo que o agente cria: textos, imagens, vídeos, áudios, carrosséis e posts.",
+      "subdominio": null
+    },
+    {
+      "id": "dashboards",
+      "nome": "Dashboards e Relatórios",
+      "icone": "dashboard",
+      "descricao": "Dashboards, relatórios, briefings, pesquisas e análises.",
+      "subdominio": null
+    },
+    {
+      "id": "trafego",
+      "nome": "Tráfego Pago",
+      "icone": "trafego",
+      "descricao": "Campanhas, criativos, ROAS, CAC e métricas de mídia paga.",
+      "subdominio": "ads.agentjj.com.br"
+    },
+    {
+      "id": "gestao",
+      "nome": "Gestão e Empresa",
+      "icone": "gestao",
+      "descricao": "Indicadores de gestão, faturamento, lucro, ROI e operação da empresa.",
+      "subdominio": "gestao.agentjj.com.br"
+    },
+    {
+      "id": "briefings",
+      "nome": "Briefings e Demandas",
+      "icone": "briefing",
+      "descricao": "Briefings diários, resumos de grupos e demandas em aberto.",
+      "subdominio": "briefing.agentjj.com.br"
+    },
+    {
+      "id": "integracoes",
+      "nome": "Integrações",
+      "icone": "integracao",
+      "descricao": "ClickUp, Sheets, Slack, Notion, Meta Ads, Google Ads e webhooks.",
+      "subdominio": null
+    },
+    {
+      "id": "automacoes",
+      "nome": "Automações IA",
+      "icone": "automacao",
+      "descricao": "Agentes, pipelines, workflows e orquestrações multi-agente.",
+      "subdominio": null
+    },
+    {
+      "id": "infra",
+      "nome": "Infra e Deploys",
+      "icone": "infra",
+      "descricao": "Deploys, commits, versões, nginx, DNS, certificados e incidentes.",
+      "subdominio": null
+    }
+  ],
+  "subsites": [
+    {
+      "host": "briefing.agentjj.com.br",
+      "nome": "Briefings Diários",
+      "modulo": "briefings",
+      "status": "planejado",
+      "descricao": "Briefing diário de demandas, grupos e operação."
+    },
+    {
+      "host": "ads.agentjj.com.br",
+      "nome": "Ads & Tráfego Pago",
+      "modulo": "trafego",
+      "status": "planejado",
+      "descricao": "Campanhas, criativos e performance de mídia paga."
+    },
+    {
+      "host": "gestao.agentjj.com.br",
+      "nome": "Gestão da Empresa",
+      "modulo": "gestao",
+      "status": "planejado",
+      "descricao": "Faturamento, lucro, ROI, ROAS e visão executiva."
+    }
+  ]
+}
