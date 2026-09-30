@@ -73,12 +73,35 @@ Esses dois scripts não estão nesta vitrine — são infraestrutura da instânc
 
 ## O que dá para ver aqui
 
-**A análise do Composio** — a única publicação com corpo completo. São 7.819
-caracteres sobre a camada de integração do agente: 1.000 toolkits e 40.702 tools
-mapeados contra as demandas reais, com o estado de cada conta verificado por leitura
-direta, não por estimativa. Está no painel, e tem página própria.
+**A integração com o Composio** — o que a camada de integração faz, o que dá para
+integrar, quais integrações já estão verificadas e o que entra em seguida. Tem página
+própria, e o painel também mostra o card.
 
 **Os nove módulos** e o painel de rotinas, com histórico de execução e estado.
+
+## O que foi retirado da versão pública
+
+A publicação sobre o Composio existe em duas versões, e a diferença não é de estilo.
+
+A original tem 7.819 caracteres de análise verificada por comando, com número de
+catálogo, nome de conta e o detalhe do que cada verificação devolveu. Entre esses
+detalhes estavam um endereço IP residencial, a localização e a referência a um evento
+de autenticação — dados que não pertencem a um repositório aberto. **A versão pública
+foi reescrita** para explicar o que a integração faz e o que já funciona, sem nenhum
+dado desses.
+
+O mesmo vale para o resto do conteúdo: o que a instância real produz continua lá, com
+todo o detalhe, e o que é público aqui é a explicação. Isso é uma escolha, não uma
+limitação — o sistema real existe e trabalha; o que não vai para o ar é o registro do
+que ele executa.
+
+## A nota sobre o privado, e por que ela importa
+
+Quem lê esta página vai passar pelo repositório privado do projeto principal e vai
+perceber que ele não está aberto. Isso é deliberado: a instância real tem credencial de
+deploy, logs de execução e dados operacionais, e nenhum dos três pertence a um
+repositório público. Separar a vitrine do sistema real é o que permite mostrar o
+trabalho sem abrir o que precisa ficar fechado.
 
 ## Limites desta versão
 
