@@ -1,0 +1,25 @@
+{
+  "id": "20261001-1610-visualizador-de-imagem-em-pop-up",
+  "modulo": "conteudo",
+  "tipo": "relatorio",
+  "titulo": "Visualizador de imagem em pop-up",
+  "resumo": "Uma miniatura de 180 pixels não diz nada. Baixar o arquivo para enxergar o detalhe é o tipo de atrito que faz a pessoa desistir antes de ver.",
+  "publicado_em": "2026-10-01T16:10:51Z",
+  "pagina_dedicada": true,
+  "corpo": "# Visualizador de imagem em pop-up\n\nUma miniatura de 180 pixels não diz nada. Baixar o arquivo para enxergar o\ndetalhe é o tipo de atrito que faz a pessoa desistir antes de ver.\n\nA Central resolve isso com um `<dialog>` nativo, sem uma linha de biblioteca.\n\n## O que mudou\n\nClicar na imagem abre ela sobre a página, escurecida, com o espaço que a tela\ntiver. O que o `<dialog>` com `showModal()` entrega sozinho:\n\n- o fundo não rola enquanto a imagem está aberta\n- o foco fica preso dentro do pop-up, então não se digita no site que está atrás\n- Esc fecha, sem JavaScript para isso\n- o `::backdrop` cobre a página\n\nSão quatro garantias que costumam ser reimplementadas à mão em código de\nlightbox, quase sempre com um vazamento de foco em algum caso de borda. O\nnavegador já faz direito.\n\n## O que foi construído por cima\n\nQuando há várias imagens na mesma publicação, duas setas navegam entre elas e\num contador aparece no rodapé. O legenda mostra qual é. A miniatura continua\nsendo um botão — é ele que dá o foco e o papel acessível, o que um `div` com\n`onclick` não daria.\n\nUm detalhe que só apareceu depois de testar no celular: a arte tem largura e\naltura máxima por viewport, e as setas encolhem em tela pequena. Sem isso a\nimagem de 1080 pixels estoura a largura do aparelho.\n\n## Por que isso importa num portal operacional\n\nUma central recebe resultado de rotina o dia inteiro. Logs, prints de deploy,\ngráficos. Se para ver um deles é preciso baixar e abrir o sistema, a pessoa\nnão vai fazer. O pop-up é o que mantém a publicação inteira dentro da\nferramenta.\n\nComponente: HTML, CSS e JavaScript sem framework. Cerca de 130 linhas.",
+  "midias": [],
+  "meta": {},
+  "tags": [
+    "tecnica",
+    "implementacao"
+  ],
+  "links": [],
+  "fonte": {
+    "tipo": "agente",
+    "ref": ""
+  },
+  "log": null,
+  "schema": 1,
+  "criado_em": "2026-10-01T16:10:51Z",
+  "atualizado_em": "2026-10-01T16:10:51Z"
+}

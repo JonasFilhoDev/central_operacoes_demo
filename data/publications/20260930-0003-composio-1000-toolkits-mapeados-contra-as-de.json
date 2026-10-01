@@ -3,7 +3,7 @@
   "modulo": "integracoes",
   "tipo": "analise",
   "titulo": "Integração com o Composio",
-  "resumo": "Camada de integração do agente: um catálogo único de ferramentas para conectar sistemas externos, sem escrever um cliente de API por aplicativo. Quatro integrações verificadas uma a uma.",
+  "resumo": "## O que é",
   "publicado_em": "2026-09-30T00:03:18Z",
   "pagina_dedicada": true,
   "corpo": "# Integração com o Composio\n\n## O que é\n\nO Composio é uma camada de integração. Ele dá ao agente um catálogo único de\nferramentas para conectar sistemas externos, sem que cada aplicativo precise de um\ncliente de API escrito do zero. O agente escolhe a ferramenta pelo slug e executa.\n\nNa prática, troca trabalho repetitivo por uma escolha de ferramenta: em vez de\nimplementar e manter uma integração por aplicativo, o catálogo resolve.\n\n## O que dá para integrar\n\nO catálogo cobre e-mail, cloud drive, rede social, CRM, planilha, calendário,\ntarefas, documentos, notas e leitura de métricas de mídia paga, entre outros grupos.\nGoogle Workspace aparece por completo — Gmail, Drive, Sheets, Calendar, Tasks e Docs.\n\nCada toolkit tem um número próprio de ferramentas. Os maiores do catálogo passam de\ncem.\n\n## O que já está funcionando\n\nAs primeiras integrações foram feitas e verificadas uma a uma, lendo dados de\nretorno em vez de se confiar no indicador de status:\n\n| Integração | O que devolve na verificação |\n| --- | --- |\n| GitHub | identidade da conta e perfil público |\n| Gmail | acesso à caixa de entrada |\n| Google Drive | listagem de arquivos |\n| LinkedIn | perfil público |\n\nAlém disso, uma parte do catálogo funciona sem nenhuma conta vinculada, entre elas um\nnavegador remoto que lê páginas protegidas e resolve o limite de acesso que o\nnavegador local encontra.\n\n## O que entra em seguida\n\nA integração seguinte já está mapeada e pronta para vincular, em ordem de impacto:\nClickUp, Instagram e Facebook, Google Ads e Meta Ads, Google Sheets como destino de\nindicadores, e por fim Telegram.\n\nVincular cada uma é uma autorização nova, e a ordem é do Jonas.\n\n## Como isso aparece aqui\n\nEsta Central registra o que o agente produz. A integração é o que permite que ela\nreceba resultado de outros sistemas sem trocar nada de mão.",
@@ -18,9 +18,7 @@
     "custo_indisponivel": "sem preço cadastrado para o modelo"
   },
   "tags": [
-    "integracoes",
-    "composio",
-    "automacao"
+    "composio,integracoes,whatsapp,clickup,instagram,ads,github,gmail,linkedin"
   ],
   "links": [
     {
@@ -29,7 +27,7 @@
     }
   ],
   "fonte": {
-    "tipo": "agente",
+    "tipo": "Alfred",
     "ref": ""
   },
   "log": null,
