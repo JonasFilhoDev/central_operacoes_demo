@@ -1,0 +1,25 @@
+{
+  "id": "20261001-1610-deploy-que-verifica-antes-de-publicar",
+  "modulo": "conteudo",
+  "tipo": "relatorio",
+  "titulo": "Deploy que verifica antes de publicar",
+  "resumo": "O worktree do git é a raiz do servidor web. Salvar arquivo no lugar já publica.",
+  "publicado_em": "2026-10-01T16:10:51Z",
+  "pagina_dedicada": true,
+  "corpo": "# Deploy que verifica antes de publicar\n\nO worktree do git é a raiz do servidor web. Salvar arquivo no lugar já publica.\n\nIsso é ótimo no dia a dia e perigoso no deploy: não existe passo de separação\nentre \"testei\" e \"no ar\". Um ponto e vírgula errado vai direto para quem está\nnavegando.\n\n## A resposta: um comando só, na ordem certa\n\n```\n./scripts/deploy.sh \"mensagem do commit\"\n```\n\nO que ele faz, nessa sequência:\n\n1. **commit** do que mudou\n2. **sincroniza a tag de versão** nos assets referenciados pelo HTML\n3. **verifica** index, CSS, JavaScript, favicon e robots\n4. **push** para o repositório\n\nO passo 3 vem antes do 4. A verificação falha, o push não acontece, e o\ndeploy quebrado nunca chega ao repositório nem ao histórico.\n\n## As duas decisões que sustentam isso\n\n**Os assets são versionados por commit.** O HTML referencia\n`css/style.css?v=<short-sha>`, e o sha é o do commit que de fato alterou o\narquivo. É o que permite cache de um ano nos arquivos estáticos sem nunca servir\nversão velha. E o detalhe: o sha é o do commit de alteração, não o do commit que\nsincroniza a tag. Usar o errado faz o sistema nunca convergir.\n\n**A credencial de deploy não está no repositório.** Vive em `~/.site_auth`, com\nmodo 600, fora da árvore do git. Passar a senha pela linha de comando a\ncolocaria no histórico do shell e visível em `ps` para qualquer usuário da\nmáquina.\n\n## O que a verificação cobre, e por que cada item\n\n| Item | O que impede |\n|---|---|\n| index e assets com 200 | publicar arquivo faltando |\n| favicon e robots sem autenticação | o navegador pedir recurso protegido e reabrir a caixa de senha |\n| HTML sem placeholder não substituído | mandar `?v=__ASSET_SHA__` literal ao navegador |\n| basic auth ativa | expor o site sem credencial |\n| porta 80 sem redirecionamento | perder a credencial na mudança de esquema |\n| política de cache por tipo | servir CSS velho pelo nome novo |\n\n## O caso do cache que engana\n\nUm aviso de \"política de cache inesperada\" com senha errada mostra `no-store`\nnos dois assets, porque o nginx serve a página de erro 401 em vez do CSS. Os dois\nficam idênticos e a mensagem aponta para o lugar errado.\n\nDuas vezes isso mandou auditar um cache que estava perfeito. O script passou a\nreconhecer o padrão: quando HTML e CSS respondem exatamente o mesmo, é a página de\n401 sendo servida, e o problema é credencial.\n\nDeploy que não falha quando deveria não é deploy. É sorte.",
+  "midias": [],
+  "meta": {},
+  "tags": [
+    "tecnica",
+    "implementacao"
+  ],
+  "links": [],
+  "fonte": {
+    "tipo": "agente",
+    "ref": ""
+  },
+  "log": null,
+  "schema": 1,
+  "criado_em": "2026-10-01T16:10:51Z",
+  "atualizado_em": "2026-10-01T16:10:51Z"
+}

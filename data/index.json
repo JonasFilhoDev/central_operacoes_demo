@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-09-30T00:03:26Z",
+  "gerado_em": "2026-10-01T16:10:51Z",
   "modulos": [
     {
       "id": "rotinas",
@@ -68,10 +68,10 @@
   ],
   "subsites": [],
   "stats": {
-    "total": 1,
+    "total": 4,
     "por_modulo": {
       "rotinas": 0,
-      "conteudo": 0,
+      "conteudo": 3,
       "dashboards": 0,
       "trafego": 0,
       "gestao": 0,
@@ -80,7 +80,7 @@
       "automacoes": 0,
       "infra": 0
     },
-    "com_pagina": 1,
+    "com_pagina": 4,
     "com_midia": 0,
     "duracao_media_s": 4.2,
     "costo_total_usd": null,
@@ -159,13 +159,74 @@
       "modulo": "integracoes",
       "tipo": "analise",
       "titulo": "Integração com o Composio",
-      "resumo": "Camada de integração do agente: um catálogo único de ferramentas para conectar sistemas externos, sem escrever um cliente de API por aplicativo. Quatro integrações verificadas uma a uma.",
+      "resumo": "## O que é",
       "publicado_em": "2026-09-30T00:03:18Z",
       "pagina_dedicada": true,
       "tags": [
-        "integracoes",
-        "composio",
-        "automacao"
+        "composio,integracoes,whatsapp,clickup,instagram,ads,github,gmail,linkedin"
+      ],
+      "capa": null,
+      "n_midias": 0,
+      "tem_log": false,
+      "duracao_s": null,
+      "modelo": null,
+      "provedor": null,
+      "job": null,
+      "origem": "agente"
+    },
+    {
+      "id": "20261001-1610-deploy-que-verifica-antes-de-publicar",
+      "modulo": "conteudo",
+      "tipo": "relatorio",
+      "titulo": "Deploy que verifica antes de publicar",
+      "resumo": "O worktree do git é a raiz do servidor web. Salvar arquivo no lugar já publica.",
+      "publicado_em": "2026-10-01T16:10:51Z",
+      "pagina_dedicada": true,
+      "tags": [
+        "tecnica",
+        "implementacao"
+      ],
+      "capa": null,
+      "n_midias": 0,
+      "tem_log": false,
+      "duracao_s": null,
+      "modelo": null,
+      "provedor": null,
+      "job": null,
+      "origem": "agente"
+    },
+    {
+      "id": "20261001-1610-publicacao-automatizada-etapa-por-etapa",
+      "modulo": "conteudo",
+      "tipo": "relatorio",
+      "titulo": "Publicação automatizada, etapa por etapa",
+      "resumo": "Publicar não é postar. São sete etapas, e qualquer uma delas pode deixar o agente publicando algo errado num perfil real.",
+      "publicado_em": "2026-10-01T16:10:51Z",
+      "pagina_dedicada": true,
+      "tags": [
+        "tecnica",
+        "implementacao"
+      ],
+      "capa": null,
+      "n_midias": 0,
+      "tem_log": false,
+      "duracao_s": null,
+      "modelo": null,
+      "provedor": null,
+      "job": null,
+      "origem": "agente"
+    },
+    {
+      "id": "20261001-1610-visualizador-de-imagem-em-pop-up",
+      "modulo": "conteudo",
+      "tipo": "relatorio",
+      "titulo": "Visualizador de imagem em pop-up",
+      "resumo": "Uma miniatura de 180 pixels não diz nada. Baixar o arquivo para enxergar o detalhe é o tipo de atrito que faz a pessoa desistir antes de ver.",
+      "publicado_em": "2026-10-01T16:10:51Z",
+      "pagina_dedicada": true,
+      "tags": [
+        "tecnica",
+        "implementacao"
       ],
       "capa": null,
       "n_midias": 0,

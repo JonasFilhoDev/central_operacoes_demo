@@ -1717,6 +1717,159 @@ img, svg {
   word-break: break-word;
 }
 
+/* A miniatura da imagem e um botao: abre no visualizador em vez de
+   link para baixar. Sem esta regra o botao carrega o fundo e a borda
+   padrao do navegador, o que destoa do cartao. */
+.media-zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-canvas);
+  cursor: zoom-in;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.media-zoom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.media-zoom:hover img,
+.media-zoom:focus-visible img {
+  transform: scale(1.03);
+  opacity: 0.92;
+}
+
+.media-zoom:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------
+ * Visualizador de imagem (<dialog> nativo).
+ *
+ * <dialog> showModal() ja entrega: fundo nao rola, Esc fecha, foco preso
+ * dentro do elemento, e o ::backdrop cobre a pagina. O que falta e o
+ * visual e o posicionamento da imagem.
+ * ------------------------------------------------------------------ */
+.viz {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: 96vw;
+  max-height: 96vh;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.viz::backdrop {
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.viz[open] {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "ant figura prox";
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.viz-figura {
+  grid-area: figura;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-height: 96vh;
+  min-width: 0;
+}
+
+.viz-img {
+  display: block;
+  max-width: min(88vw, 1600px);
+  max-height: 86vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: var(--color-canvas);
+}
+
+.viz-legenda {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  color: var(--color-muted);
+  text-align: center;
+  padding: 0 var(--space-sm);
+}
+
+.viz-legenda[data-contador]:not([data-contador=""])::after {
+  content: " · " attr(data-contador);
+  color: var(--color-primary);
+}
+
+.viz-fechar,
+.viz-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--color-hairline);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.viz-fechar:hover,
+.viz-nav:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: var(--color-primary);
+}
+
+.viz-fechar:focus-visible,
+.viz-nav:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.viz-fechar {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 44px;
+  height: 44px;
+  font-size: 28px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.viz-nav {
+  width: 52px;
+  height: 78px;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.viz-ant { grid-area: ant; }
+.viz-prox { grid-area: prox; }
+
+.viz-nav[hidden] {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .viz-img { max-width: 92vw; max-height: 78vh; }
+  .viz-nav { width: 42px; height: 60px; font-size: 32px; }
+}
+
 .media-item audio {
   width: 100%;
 }

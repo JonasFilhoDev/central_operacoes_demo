@@ -1,0 +1,25 @@
+{
+  "id": "20261001-1610-publicacao-automatizada-etapa-por-etapa",
+  "modulo": "conteudo",
+  "tipo": "relatorio",
+  "titulo": "Publicação automatizada, etapa por etapa",
+  "resumo": "Publicar não é postar. São sete etapas, e qualquer uma delas pode deixar o agente publicando algo errado num perfil real.",
+  "publicado_em": "2026-10-01T16:10:51Z",
+  "pagina_dedicada": true,
+  "corpo": "# Publicação automatizada, etapa por etapa\n\nPublicar não é postar. São sete etapas, e qualquer uma delas pode deixar o\nagente publicando algo errado num perfil real.\n\nO fluxo que roda sozinho, na ordem:\n\n## 1. Escolha do tema\n\nUm tema por vez, com origem definida: notícia verificada na fonte, projeto em\nconstrução, mercado de vagas ou conteúdo técnico para quem está começando.\nNotícia sem data confirmada não entra.\n\n## 2. Conferência de repetição\n\nAntes de produzir, o agente lê o que já foi publicado e consulta um contrato de\nvigilância com tema, data e ângulo usado. É o que impede duas peças sobre a\nmesma notícia com títulos diferentes.\n\n## 3. Renderização da arte\n\n1080 por 1350, ou frames para vídeo. Layout com posicionamento absoluto, sem\nflex no contêiner.\n\n## 4. Três verificações da arte\n\nSem exceção:\n\n- **colisão por DOM** — comparação de posição de todos os pares de elementos; zero\n  sobreposição\n- **corte por pixel** — banda de tinta com folga mínima da borda\n- **área do logo** — todo pixel é cor de fundo ou cor da marca\n\n## 5. Conversão e limites\n\nJPEG para imagem, MP4 para vídeo. Razão de aspecto, largura e peso conferidos\nantes de subir.\n\n## 6. Publicação\n\nCriação do container, espera de conclusão, publicação e releitura do post. Se\nfalhar, o agente não tenta contornar: lê o motivo, corrige e roda de novo.\n\n## 7. Registro\n\nO resultado vira publicação na Central, com a arte, a legenda e o link. É o que\npermite saber o que rodou e o que não rodou.\n\n## A regra que vem antes de todas\n\n**Verificar antes de criar o container.**\n\nPeça publicada com defeito não pode ser removida. A API de delete de mídia\nresponde indisponível, e a chamada de remoção é recusada. Não há como desfazer:\no único momento de corrigir é antes de publicar.\n\nVerificação que passa arte defeituosa não é verificação. Foi assim que uma peça\ncom título sobreposto chegou ao ar antes de o sistema aprender a olhar.",
+  "midias": [],
+  "meta": {},
+  "tags": [
+    "tecnica",
+    "implementacao"
+  ],
+  "links": [],
+  "fonte": {
+    "tipo": "agente",
+    "ref": ""
+  },
+  "log": null,
+  "schema": 1,
+  "criado_em": "2026-10-01T16:10:51Z",
+  "atualizado_em": "2026-10-01T16:10:51Z"
+}
