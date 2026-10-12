@@ -1,0 +1,15 @@
+{
+  "id": "20261012-2102-20261012-2030-integracao-clickup-composio",
+  "titulo": "Integração com o ClickUp via Composio",
+  "resumo": "A Central de Operações (batcaverna) agora se conecta ao ClickUp através do **Composio**, uma camada de integração que expõe 1.000+ toolkits (40 mil ferramentas) via uma única conta autenticada.",
+  "tags": [
+    "tecnica",
+    "implementacao",
+    "integracoes"
+  ],
+  "corpo": "# Integração com o ClickUp via Composio\n\nA Central de Operações (batcaverna) agora se conecta ao ClickUp através do **Composio**, uma camada de integração que expõe 1.000+ toolkits (40 mil ferramentas) via uma única conta autenticada.\n\n## O que a integração faz\n\nDois jobs agendados mantêm a batcaverna sincronizada com o workspace do ClickUp:\n\n### 1. Sincronização semanal (`sync-clickup`)\n- **Quando:** segundas-feiras, 08:00 (horário de Brasília)\n- **O que faz:** percorre **todas as lists** do Space (folderless + dentro de folders), busca todas as tasks e publica um resumo agrupado por list na Central\n- **Saída:** publicação com workspace, space, lists sincronizadas, total de tasks e detalhes por list (nome, status, prioridade, responsável, prazo)\n\n### 2. Relatório semanal (`clickup-weekly-report`)\n- **Quando:** segundas-feiras, 08:00 (horário de Brasília) — roda junto com a sincronização\n- **O que faz:** analisa o período anterior (segunda a domingo) e classifica tasks em três categorias:\n  - ✅ **Entregues** — tasks fechadas na semana (velocity)\n  - 🔄 **Em andamento** — tasks com status aberto/custom\n  - ⚠️ **Bloqueadores** — tasks com status contendo \"bloquead\", \"aguardando\" ou \"waiting\"\n- **Saída:** relatório executivo com contadores, lista das tasks por categoria e resumo de métricas\n\n## Como funciona tecnicamente\n\n- **Autenticação:** toolkit `clickup` no Composio (conta `clickup_sec-acumen`, status ACTIVE)\n- **Workspace:** \"Jonas's Workspace\" (team_id fixo)\n- **Space:** \"Espaço da equipe\" (space_id fixo)\n- **API calls:** `CLICKUP_GET_AUTHORIZED_TEAMS_WORKSPACES` → `CLICKUP_GET_FOLDERLESS_LISTS` + `CLICKUP_GET_FOLDERS` → `CLICKUP_GET_TASKS` (paginado)\n- **Persistência:** cada execução gera uma publicação JSON em `data/publications/` e atualiza `data/index.json` + `data/cron/status.json`\n\n## Criação de tasks via CLI\n\nAlém da leitura, a integração expõe `clickup_create_task.py` para criar tasks programaticamente:\n\n```bash\npython3 scripts/clickup_create_task.py <list_id> \"Nome da task\" \"Descrição\" \\\n  --assignee <user_id> --priority 2 --due_date <epoch_ms> --tags \"bug,urgente\"\n```\n\n- `priority`: 1=urgent, 2=high, 3=normal, 4=low\n- `due_date`: timestamp em milissegundos (epoch ms)\n\n## Próximos passos no roadmap\n\n- Handler no Telegram: \"Alfred, cria task X no projeto Y\"\n- Automações nativas no ClickUp (status → notifica no Telegram; due_date hoje → alerta diário)\n- Importação de dados legados (Notion, Trello, planilhas)\n- Dashboard de velocity e lead time por cliente/projeto",
+  "midias": [],
+  "capa": null,
+  "publicado_em": "2026-10-12T21:02:34Z",
+  "origem": "vitrine"
+}

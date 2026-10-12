@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-10-11T23:17:12Z",
+  "gerado_em": "2026-10-12T20:01:49Z",
   "modulos": [
     {
       "id": "rotinas",
@@ -68,7 +68,7 @@
   ],
   "subsites": [],
   "stats": {
-    "total": 4,
+    "total": 5,
     "por_modulo": {
       "rotinas": 0,
       "conteudo": 3,
@@ -76,11 +76,11 @@
       "trafego": 0,
       "gestao": 0,
       "briefings": 0,
-      "integracoes": 1,
+      "integracoes": 2,
       "automacoes": 0,
       "infra": 0
     },
-    "com_pagina": 4,
+    "com_pagina": 5,
     "com_midia": 0,
     "duracao_media_s": 4.2,
     "costo_total_usd": null,
@@ -121,34 +121,42 @@
       "falhas_consecutivas": 0
     },
     {
-      "job": "sync-integracoes",
-      "nome": "Sincronização de integrações",
+      "job": "sync-clickup",
+      "nome": "Sincronização ClickUp",
       "modulo": "integracoes",
-      "criado_em": "2026-09-29T21:05:00Z",
-      "agenda": "a cada 30 min",
+      "criado_em": "2026-10-12T20:28:37Z",
+      "agenda": "semanal, segundas 08:00 BRT",
       "estado": "ok",
-      "atualizado_em": "2026-09-30T00:03:26Z",
+      "atualizado_em": "2026-10-12T20:28:37Z",
       "historico": [
         {
-          "em": "2026-09-29T21:05:00Z",
-          "estado": "rodando",
-          "duracao_s": null,
-          "mensagem": ""
-        },
-        {
-          "em": "2026-09-29T21:05:00Z",
+          "em": "2026-10-12T20:28:37Z",
           "estado": "ok",
-          "duracao_s": 0.9,
-          "mensagem": ""
-        },
-        {
-          "em": "2026-09-30T00:03:26Z",
-          "estado": "ok",
-          "duracao_s": 0.7,
-          "mensagem": ""
+          "duracao_s": 2.1,
+          "mensagem": "12 tasks de 3 lists sincronizadas"
         }
       ],
-      "ultima_duracao_s": 0.7,
+      "ultima_duracao_s": 2.1,
+      "ultima_publicacao": null,
+      "falhas_consecutivas": 0
+    },
+    {
+      "job": "clickup-weekly-report",
+      "nome": "Relatório semanal ClickUp",
+      "modulo": "metricas",
+      "criado_em": "2026-10-12T20:29:37Z",
+      "agenda": "semanal, segundas 08:00 BRT",
+      "estado": "ok",
+      "atualizado_em": "2026-10-12T20:29:37Z",
+      "historico": [
+        {
+          "em": "2026-10-12T20:29:37Z",
+          "estado": "ok",
+          "duracao_s": 3.4,
+          "mensagem": "0 entregues, 12 em andamento, 0 bloqueados"
+        }
+      ],
+      "ultima_duracao_s": 3.4,
       "ultima_publicacao": null,
       "falhas_consecutivas": 0
     }
@@ -227,6 +235,28 @@
       "tags": [
         "tecnica",
         "implementacao"
+      ],
+      "capa": null,
+      "n_midias": 0,
+      "tem_log": false,
+      "duracao_s": null,
+      "modelo": null,
+      "provedor": null,
+      "job": null,
+      "origem": "agente"
+    },
+    {
+      "id": "20261012-2102-20261012-2030-integracao-clickup-composio",
+      "modulo": "integracoes",
+      "tipo": "analise",
+      "titulo": "Integração com o ClickUp via Composio",
+      "resumo": "A Central de Operações (batcaverna) agora se conecta ao ClickUp através do **Composio**, uma camada de integração que expõe 1.000+ toolkits (40 mil ferramentas) via uma única conta autenticada.",
+      "publicado_em": "2026-10-12T21:02:34Z",
+      "pagina_dedicada": true,
+      "tags": [
+        "tecnica",
+        "implementacao",
+        "integracoes"
       ],
       "capa": null,
       "n_midias": 0,
