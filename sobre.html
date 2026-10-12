@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JF Dev - Desenvolvimento, automação e conteúdo técnico. O que fazemos, como entregamos e para quem.">
+  <title>Sobre a JF Dev — Central de Operações Hermes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico?v=189bff2" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css?v=189bff2">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <div class="header-brand">
+          <a href="./" class="header-brand" style="text-decoration:none;">
+            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="currentColor"/>
+              <path d="M8 16L14 22L24 10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">JF Dev</span>
+          </a>
+        </div>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <a href="./" class="nav-link">Início</a>
+          <a href="./portfolio.html" class="nav-link">Portfólio</a>
+          <a href="./sobre.html" class="nav-link active" aria-current="page">Sobre</a>
+          <a href="./contato.html" class="nav-link">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" role="main">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="hero-eyebrow">JF Dev</p>
+            <h1 id="hero-title" class="hero-title">Desenvolvimento, automação e conteúdo técnico</h1>
+            <p class="hero-description">
+              Construo sistemas, automações e conteúdo técnico para empresas que precisam entregar
+              software com qualidade e comunicar tecnologia com clareza. Tudo operado pela Central de Operações Hermes:
+              agendamento, verificação, publicação e observabilidade automatizadas.
+            </p>
+            <div class="hero-actions">
+              <a href="./portfolio.html" class="btn btn-primary">Ver portfólio</a>
+              <a href="./contato.html" class="btn btn-ghost">Conversar</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="stats-strip" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="stat-tile">
+                <div class="stat-value" data-stat="posts">—</div>
+                <div class="stat-label">Publicações técnicas</div>
+              </div>
+              <div class="stat-tile">
+                <div class="stat-value" data-stat="formatos">—</div>
+                <div class="stat-label">Formatos (carrossel, Reel, imagem)</div>
+              </div>
+              <div class="stat-tile">
+                <div class="stat-value" data-stat="rotinas">—</div>
+                <div class="stat-label">Rotinas ativas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" aria-labelledby="services-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="services-title" class="section-title">O que entregamos</h2>
+            <p class="section-description">
+              Cada serviço vem com verificação automatizada, publicação agendada e registro na Central de Operações.
+            </p>
+          </header>
+          <div class="services-grid" id="services-grid">
+            <div class="load-state">Carregando serviços…</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section" aria-labelledby="how-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="how-title" class="section-title">Como funciona</h2>
+            <p class="section-description">
+              O pipeline roda sozinho: agenda → gera → verifica → publica → registra. Você acompanha tudo na Central.
+            </p>
+          </header>
+          <ol class="steps-list" id="steps-list">
+            <li class="step-item">
+              <span class="step-number">1</span>
+              <div class="step-content">
+                <h3>Agenda</h3>
+                <p>Crons disparam nos horários definidos (10h, 14h, 16h, 20h BRT).</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number">2</span>
+              <div class="step-content">
+                <h3>Gera</h3>
+                <p>Escolhe tema, cria arte (carrossel, Reel ou imagem) e escreve legenda.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number">3</span>
+              <div class="step-content">
+                <h3>Verifica</h3>
+                <p>Corte por pixel, colisão DOM, área do logo, acentuação — tudo automatizado.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number">4</span>
+              <div class="step-content">
+                <h3>Publica</h3>
+                <p>Container → status FINISHED → publish → leitura de volta via Graph API.</p>
+              </div>
+            </li>
+            <li class="step-item">
+              <span class="step-number">5</span>
+              <div class="step-content">
+                <h3>Registra</h3>
+                <p>Permalink, media_id, legenda, mídia e métricas na Central de Operações.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="tech-section" aria-labelledby="tech-title">
+        <div class="section-inner">
+          <header class="section-header">
+            <h2 id="tech-title" class="section-title">Stack e integrações</h2>
+            <p class="section-description">
+              O que roda por baixo dos panos — ferramentas que a Central orquestra.
+            </p>
+          </header>
+          <div class="tech-grid" id="tech-grid">
+            <article class="tech-card">
+              <h3>Orquestração</h3>
+              <p>Hermes Agent (gateway, scheduler, crons, skills)</p>
+            </article>
+            <article class="tech-card">
+              <h3>Integrações</h3>
+              <p>Composio (Instagram, GitHub, Gmail, Drive, LinkedIn, ClickUp, Meta Ads)</p>
+            </article>
+            <article class="tech-card">
+              <h3>IA & Geração</h3>
+              <p>OpenRouter (Nemotron 3 Ultra, Gemini Flash Lite), Chromium headless</p>
+            </article>
+            <article class="tech-card">
+              <h3>Infra</h3>
+              <p>VPS Oracle Cloud (Always Free), nginx, TLS, Tailscale, GitHub Pages</p>
+            </article>
+            <article class="tech-card">
+              <h3>Conteúdo</h3>
+              <p>Instagram Graph API, Chromium headless (PNG/JPEG), ffmpeg (Reels)</p>
+            </article>
+            <article class="tech-card">
+              <h3>Observabilidade</h3>
+              <p>Central de Operações (feed, rotinas, módulos, status, health checks)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <p class="footer-brand">JF Dev</p>
+          <p class="footer-tagline">
+            Desenvolvimento, automação e conteúdo técnico — operado pela Central de Operações Hermes.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="./" class="footer-link">Início</a>
+          <a href="./portfolio.html" class="footer-link">Portfólio</a>
+          <a href="./sobre.html" class="footer-link">Sobre</a>
+          <a href="./contato.html" class="footer-link">Contato</a>
+          <a href="https://github.com/JonasFilhoDev/central_operacoes_demo" target="_blank" rel="noopener" class="footer-link">Repositório</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/app.js?v=189bff2"></script>
+  <script src="./js/sobre.js?v=189bff2"></script>
+</body>
+</html>

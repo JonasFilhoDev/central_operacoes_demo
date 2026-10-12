@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio JF Dev — Carrosséis técnicos, Reels, imagens únicas e automações. Exemplos reais publicados no Instagram.">
+  <title>Portfólio — JF Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico?v=189bff2" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css?v=189bff2">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <div class="header-brand">
+          <a href="./" class="header-brand" style="text-decoration:none;">
+            <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="currentColor"/>
+              <path d="M8 16L14 22L24 10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo-text">JF Dev</span>
+          </a>
+        </div>
+        <nav class="header-nav" aria-label="Navegação principal">
+          <a href="./" class="nav-link">Início</a>
+          <a href="./portfolio.html" class="nav-link active" aria-current="page">Portfólio</a>
+          <a href="./sobre.html" class="nav-link">Sobre</a>
+          <a href="./contato.html" class="nav-link">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content" role="main">
+      <section class="hero-section hero-small" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Portfólio</p>
+            <h1 id="hero-title" class="hero-title">Publicações técnicas publicadas</h1>
+            <p class="hero-description">
+              Cada card abaixo é uma publicação real no Instagram @jonasfilhodev. Filtro por formato, busca por palavra-chave
+              e clique para ver a página completa com legenda, mídia e detalhes operacionais.
+            </p>
+            <div class="filters-bar portfolio-filters" style="margin-top: var(--space-lg);">
+              <div class="filters-inner">
+                <div class="search-field">
+                  <svg class="search-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M11 11L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  <label class="sr-only" for="portfolio-busca">Buscar por título, resumo ou tag</label>
+                  <input id="portfolio-busca" type="search" placeholder="Buscar título, resumo, tag…" autocomplete="off" spellcheck="false">
+                </div>
+                <label class="sr-only" for="filtro-formato">Filtrar por formato</label>
+                <select id="filtro-formato" class="filter-select">
+                  <option value="">Todos os formatos</option>
+                  <option value="CARROSSEL">Carrossel</option>
+                  <option value="IMAGEM UNICA">Imagem única</option>
+                  <option value="REEL">Reel</option>
+                </select>
+                <label class="sr-only" for="filtro-ordem">Ordenar por</label>
+                <select id="filtro-ordem" class="filter-select">
+                  <option value="recentes">Mais recentes primeiro</option>
+                  <option value="antigas">Mais antigas primeiro</option>
+                  <option value="titulo">Título (A–Z)</option>
+                </select>
+                <button type="button" id="filtro-limpar" class="filters-clear">Limpar</button>
+                <span id="portfolio-resumo" class="filters-summary" aria-live="polite">carregando…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section" aria-labelledby="portfolio-title">
+        <div class="section-inner">
+          <div id="portfolio-grid" class="portfolio-grid">
+            <p class="load-state">Carregando portfólio…</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <p class="footer-brand">JF Dev</p>
+          <p class="footer-tagline">
+            Desenvolvimento, automação e conteúdo técnico — operado pela Central de Operações Hermes.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="./" class="footer-link">Início</a>
+          <a href="./sobre.html" class="footer-link">Sobre</a>
+          <a href="./contato.html" class="footer-link">Contato</a>
+          <a href="https://github.com/JonasFilhoDev/central_operacoes_demo" target="_blank" rel="noopener" class="footer-link">Repositório</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/app.js?v=189bff2"></script>
+  <script src="./js/portfolio.js?v=189bff2"></script>
+</body>
+</html>
