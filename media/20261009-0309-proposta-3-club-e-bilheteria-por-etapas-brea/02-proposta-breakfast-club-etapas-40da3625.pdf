@@ -1,0 +1,2294 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 5
+/Kids [ 4 0 R 13 0 R 20 0 R 27 0 R 34 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/XObject <<
+/FormXob.097985cfe0e109531c4985bcf3858e1f 6 0 R
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d 8 0 R
+>>
+/Font <<
+/F1 10 0 R
+/F1-0 11 0 R
+/F2 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 7964
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 715.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 32 Tm /F2 24 Tf 28 TL (Proposta 2 \227 Club de Assinatura e) Tj T* (Bilheteria) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 709.8898 cm
+Q
+q
+1 0 0 1 78 701.8898 cm
+Q
+q
+1 0 0 1 78 674.8898 cm
+q
+BT 1 0 0 1 0 17.5 Tm 13.5 TL /F2 9.5 Tf .290196 .333333 .407843 rg (Projeto:) Tj /F1 9.5 Tf ( Breakfast Club \(web app\), Bilheteria Breakfast Weekend \(web app\) e aplicativos nativos iOS e) Tj T* (Android) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 672.8898 cm
+Q
+q
+1 0 0 1 78 659.3898 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F2 9.5 Tf .290196 .333333 .407843 rg (Cliente:) Tj /F1 9.5 Tf ( Enrique M\374ller, para o Breakfast Weekend / Breakfast Club) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 657.3898 cm
+Q
+q
+1 0 0 1 78 643.8898 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F2 9.5 Tf .290196 .333333 .407843 rg (Data:) Tj /F1 9.5 Tf ( 8 de outubro de 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 641.8898 cm
+Q
+q
+1 0 0 1 78 628.3898 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F2 9.5 Tf .290196 .333333 .407843 rg (Respons\341vel t\351cnico:) Tj /F1 9.5 Tf ( Jonas Filho, JF Dev) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 626.3898 cm
+Q
+q
+1 0 0 1 78 612.8898 cm
+q
+BT 1 0 0 1 0 4 Tm 13.5 TL /F2 9.5 Tf .290196 .333333 .407843 rg (Valor-base do escopo completo:) Tj /F1 9.5 Tf ( R$ 79.200,00, com execu\347\343o em quatro etapas independentes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 610.8898 cm
+Q
+q
+1 0 0 1 78 600.8898 cm
+Q
+q
+1 0 0 1 78 570.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (1. Entendimento do projeto) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 564.8898 cm
+Q
+q
+1 0 0 1 78 508.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46 Tm /F1 10 Tf 14 TL 2.431505 Tw (O Breakfast Weekend \351 o maior festival de caf\351 da manh\343 do Brasil, com mais de 150 mil) Tj T* 0 Tw .601599 Tw (participantes em 20 edi\347\365es. O Breakfast Club \351 a extens\343o desse festival para o ano inteiro: um) Tj T* 0 Tw 1.718256 Tw (clube de assinatura que d\341 acesso a descontos e benef\355cios em hot\351is, cafeterias, padarias e) Tj T* 0 Tw (restaurantes participantes, com lan\347amento previsto para janeiro de 2027.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 502.8898 cm
+Q
+q
+1 0 0 1 78 432.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 60 Tm /F1 10 Tf 14 TL .759741 Tw (Esta proposta cobre o que foi discutido entre agosto e outubro de 2026 e organiza a entrega em) Tj T* 0 Tw .530974 Tw (quatro frentes: o back-end que sustenta o clube, a bilheteria do festival, os aplicativos nativos e a) Tj T* 0 Tw .370399 Tw (integra\347\343o com o sistema de reservas j\341 em opera\347\343o. O prot\363tipo funcional entregue pelo cliente) Tj T* 0 Tw 1.331599 Tw (serve como especifica\347\343o visual e de fluxo, e o trabalho descrito aqui \351 o que transforma esse) Tj T* 0 Tw (prot\363tipo em produto em produ\347\343o.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 426.8898 cm
+Q
+q
+1 0 0 1 78 384.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL 1.056799 Tw (O mercado do festival \351 o brasileiro. Uma vers\343o para a Espanha foi aventada e fica fora deste) Tj T* 0 Tw -0.120848 Tw (escopo, a ser or\347ada separadamente caso o produto se consolide no Brasil. O idioma, a moeda e a) Tj T* 0 Tw (legisla\347\343o de pagamento considerados s\343o os do Brasil.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 378.8898 cm
+Q
+q
+1 0 0 1 78 348.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (2. Estado atual do que existe) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 342.8898 cm
+Q
+q
+1 0 0 1 78 300.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL 2.719724 Tw (Antes de or\347ar, foi feita a leitura t\351cnica do material entregue. O resultado abaixo \351 o que) Tj T* 0 Tw .269741 Tw (fundamenta o prazo e o valor, e \351 importante que esteja registrado na proposta para que n\343o haja) Tj T* 0 Tw (expectativa divergente sobre o que j\341 est\341 pronto.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 294.8898 cm
+Q
+q
+1 0 0 1 78 292.8898 cm
+Q
+q
+1 0 0 1 78 290.8898 cm
+Q
+q
+1 0 0 1 72 278.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Item) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 0 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Estado verificado) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Consequ\352ncia para o projeto) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 270.8898 cm
+Q
+q
+1 0 0 1 72 222.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 24 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Interface do) Tj T* (clube) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 24 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 39 Tm /F1 9 Tf 12 TL (Prot\363tipo completo em React, com mapa,) Tj T* (estabelecimentos, reserva, carteira de saldo e) Tj T* (pontos, cat\341logo de pr\352mios, selos, desafios e \341rea) Tj T* (administrativa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 27 Tm /F1 9 Tf 12 TL (Serve como especifica\347\343o. Reduz a) Tj T* (fase de descoberta e o retrabalho de) Tj T* (interface) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 12 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 212.8898 cm
+Q
+q
+1 0 0 1 72 188.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Back-end) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Inexistente. Nenhuma chamada de rede em nenhum) Tj T* (arquivo do prot\363tipo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Constru\347\343o integral: maior fatia do) Tj T* (esfor\347o e do prazo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 180.8898 cm
+Q
+q
+1 0 0 1 72 156.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Autentica\347\343o) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Tela de login que aceita qualquer e-mail e qualquer) Tj T* (senha) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Autentica\347\343o real, com recupera\347\343o) Tj T* (de senha e sess\343o segura) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 148.8898 cm
+Q
+q
+1 0 0 1 72 112.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 24 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Reserva) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 24 cm
+Q
+q
+1 0 0 1 79.71685 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Formul\341rio que grava a reserva apenas na mem\363ria) Tj T* (do navegador) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 12 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 27 Tm /F1 9 Tf 12 TL (Reserva persistente, com) Tj T* (confirma\347\343o e controle de) Tj T* (disponibilidade) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 104.8898 cm
+Q
+q
+1 0 0 1 72 80.88976 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Saldo e pontos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Valores em mem\363ria, sem transa\347\343o, sem extrato) Tj T* (audit\341vel) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Saldo real, com lan\347amentos, extrato) Tj T* (e prote\347\343o contra inconsist\352ncia) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 72.88976 cm
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+15 0 0 13.5 77.4 805.8898 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 94.1 807.0898 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 11 Tf
+13.2 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 426.6956 801.8898 Tm
+(Proposta Comercial) Tj
+T*
+ET
+q
+15 0 0 13.5 71.7 50.98976 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 88.4 52.18976 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 506.5956 53.88976 Tm
+(1\0575) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/SMask 7 0 R
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 471
+>>
+stream
+Gb"/$cV)/0(sQoh7W78s,[NT8`i^A\GS!oOX&M.fX[C:IJD`]2PQ/5YdX4d<Y9E3]?LeqcVTnklp[\0G&-iFFL]9Xo&!,$@X[q]FIBh%Xpg),G6G-j>4sfCis)L06SNlL;;TVD<E#BJk*\7DFdZ4%7^G)Rl>2tp8jfCtA?r"(bKunO9/rHPW-Hps1haR`q`h+C:Jd?6>-VU+=M[r`hHeGjiOR(SZa;&ZNb;pT,L@GYsi_MfVhd/4QI<[:Ai%`NG8u`W)I!Bb-We*@r`TOaB:7AqYeZs%,`RWm1*?!+9ET-&!QI64rMq_6Pad)-(@qj^2Fd1ln!e3ll.G2,09mbR<ajJ6Te/%81*6nW^d<Q#Satr<H^6Ud@b^,V?+Z%]i*+O#2kd%=':=VF<54:"(/C@n/$I`UIhM'b%@hU.+(C=;hRQ9b#mP&]=fg^&0Y8)$,Mj1B%c+m[4#6tJ=48]/.$gC.~>
+endstream
+endobj
+7 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 285
+>>
+stream
+Gb"/!_%":)$tKJf+=m(k\qeg]49u>A"djfD1'%b.$b/)SUf!@IrNr3l!=7R'B,b?`ph,9W@EMA6KL:4LB/h(obQ<O&jAg:]P7Jbn@GH^EHmF"U5>IG[4%&VeW7?;G4aA5i&-[\1lB<EB.1ps52@5gRcJGqbii;q?pppLf`FqK*;qrQ--l<(n&JQAn5Y8:5'$\;0Xo#=(:Yc-EF^@hUFAko*X5b-'-bG`6mTWZ][eJJ>o,)W*6E.X/>3h\$mWou++n_ep<F1/MXICl`5N[hF`#B\bY=S~>
+endstream
+endobj
+8 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/SMask 9 0 R
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 962
+>>
+stream
+Gau1,$]g`A&BElUi%?Y`T;SoOS9TqBa'j5V[7ujRo_X-2c2p1Vf0js3s%I#Bnmcj1*GVuc?'8`OAY^(71ScjPT!*,RG!(u.VS@!EEO2n-RtZ?t7<E;dIIm<'X8?Gncm;!aaN1("+=$J@S`b+"UJYI_QZca39KQ/I=#N*(mlY6K^HksPaM'rHPm4C>`aoS@(B%%ifaV*`JBW"<h[Q*IB=7W@;@VCK\Q7=oPga\2_h@6cjH"BE^%G1OchoFXG`-AM9N+WKUJ2;%Op#1rd6"B0jF^'GJ%g\lA5bloeOphZ8EilBadq[H"HSb]<+O'NpQi+de/7JH;k<A"]@UR]1UA?6!&)E;ebO`H]QcN#2%hFj5h%ihh?>FZPt,lWH#Ic>rWO2)9J]@?6rWTK30J"kQ+=LF<LqIsX;U)*Zu`!Y36U)*D.qM"14PIfIc`W-mYSGR7j\I>V'(s:bB\4/Jl(VFN#`1D*7H@q^ZNbpmL6P'_]@:cGQFe@q7OUoC:hr)SJ0I(^Yh3*7l`q4C//+X0pEDhgN;*g-&CV3afJMR_?DqWh=\JB)B7;69pb])a!=%=TOikM[Co/b]k'EthAt[80?CuETOG2hA?'eSlY2;PLD.T]-8os;mj`WV&;9r&(&rA]hA%>nQW9+iWIg'4$/\j5\?Pn_H`&:)V=R*[(LoC)O2<h"8Wu>)mWi<0Hcu$dH!.W?L.kY,.\Eg9h(\M7><@4bDMN`!"6=nsSuf6C3$gl?mZIGE05pC2*DHdT&sJiVUIWGQ)tWio45P'MjG1pFpg=9;4q/M\00AOr^Q@362flp7#B[QuUp(5:P\N%q9NO6lM*lSfPSI',Por"8$W.daklgjq,f%cZ,[pRhp-G]cP-8oW8>:C5l>Y#/XYHbnMWKRQm\Z4D[u=Q!c4M9;'CS8R+(J;^5>A1q&&V"lnE_r*SDhCu3r4KO^TrKUcX]0BF]nMLcl&T5~>
+endstream
+endobj
+9 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 481
+>>
+stream
+Gar7X;8roQ=BK<UhS'/K[uo=PDJp(pSabn5T&"@qB.nl8qQqM`s"ssL#-;50$)1uKRH"o#Qu!D!5Tip\&P\SYbE$eIZ[_oL#mB-!RF#Kt^]3!.2YYOa$YReW4WT&Yp@g:j(1q/j-?OTCZ@#>>9T0gk!m5B^b2+et0?@51VACZXp]"SCn79?fqrdplh7Ij",3`\/:%I7NAH21H1XP4CJo%Ni+H'[6Cib)3fASFYokOnrFd*+_XB<Ais15`,et;E6XB9!N7G!"gqtK!'2J*^UZ4'DN?5)HX3H?o2]&\UN@`AH_1CH!p(,7[(0o!L(VpJq81%NlL2fIQeGmabic="^?r`INkU4*$@/$ja*4c:JQoOIHW[$Zi^$>9;4LILq"S@LH0mX<8Cp@gd>QAH1`R$)p3HMII'K:d(srs-a(Yu?5SAIpEkoD]mDr!*7am+8j.@,U1lRns(^KnIheb^o^@?igtQQk'0Dau3B~>
+endstream
+endobj
+10 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+12 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+13 0 obj
+<<
+/Contents 14 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/XObject <<
+/FormXob.097985cfe0e109531c4985bcf3858e1f 15 0 R
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d 17 0 R
+>>
+/Font <<
+/F1 10 0 R
+/F1-0 19 0 R
+/F2 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 8595
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 72 747.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Pagamento) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Bot\365es de recarga que apenas somam um valor na) Tj T* (tela) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Gateway de pagamento, assinatura) Tj T* (recorrente e emiss\343o de cobran\347a) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 739.8898 cm
+Q
+q
+1 0 0 1 72 715.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\301rea) Tj T* (administrativa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 0 cm
+Q
+q
+1 0 0 1 79.71685 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Edita a lista exibida na tela, sem persistir) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 12 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Painel de gest\343o com banco de) Tj T* (dados e controle de acesso) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 707.8898 cm
+Q
+q
+1 0 0 1 72 683.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Reservas do) Tj T* (festival) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 0 cm
+Q
+q
+1 0 0 1 79.71685 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Operam em plataforma terceira, o DGuests, fora do) Tj T* (site institucional do festival) Tj T* ET
+Q
+Q
+q
+1 0 0 1 79.71685 0 cm
+Q
+q
+1 0 0 1 296.3291 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Integra\347\343o depende de autoriza\347\343o) Tj T* (de terceiro. Ver se\347\343o 6) Tj T* ET
+Q
+Q
+q
+1 0 0 1 296.3291 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 673.8898 cm
+Q
+q
+1 0 0 1 78 631.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL .223088 Tw (Em resumo: a parte que o usu\341rio v\352 est\341 desenhada, e a parte que sustenta o produto ainda n\343o) Tj T* 0 Tw .566599 Tw (existe. O valor desta proposta corresponde a construir a parte que falta sobre uma base s\363lida, e) Tj T* 0 Tw (n\343o a redesenhar o que j\341 est\341 definido.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 625.8898 cm
+Q
+q
+1 0 0 1 78 595.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (3. Escopo t\351cnico) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 589.8898 cm
+Q
+q
+1 0 0 1 78 568.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (3.1 Back-end do Breakfast Club) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 565.8898 cm
+Q
+q
+1 0 0 1 78 537.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 2.072559 Tw (API em Node.js com banco relacional, modelagem de usu\341rios, estabelecimentos, reservas,) Tj T* 0 Tw -0.5 0 Td (saldo, pontos, assinaturas e transa\347\365es.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 531.8898 cm
+Q
+q
+1 0 0 1 78 517.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Autentica\347\343o com token, refresh de sess\343o, recupera\347\343o de senha e verifica\347\343o de e-mail.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 511.8898 cm
+Q
+q
+1 0 0 1 78 469.8898 cm
+q
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 32 Tm /F1 10 Tf 14 TL .5 0 Td 2.445815 Tw (Separa\347\343o rigorosa entre saldo e pontos, que s\343o dois conceitos distintos: saldo \351 cr\351dito) Tj T* 0 Tw -0.5 0 Td 1.533799 Tw (financeiro usado em reservas e assinatura, pontos s\343o reputa\347\343o do programa de fidelidade,) Tj T* 0 Tw (trocada por benef\355cios.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 463.8898 cm
+Q
+q
+1 0 0 1 78 449.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Extrato de movimenta\347\365es, com hist\363rico audit\341vel de cada lan\347amento de saldo e de pontos.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 443.8898 cm
+Q
+q
+1 0 0 1 78 415.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td .567966 Tw (M\341quina de assinatura com planos Gold anual, Prata semestral e Mensal, cobran\347a recorrente,) Tj T* 0 Tw -0.5 0 Td (car\352ncia, cancelamento e reativa\347\343o.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 409.8898 cm
+Q
+q
+1 0 0 1 78 381.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 1.588892 Tw (Backup automatizado do banco e rotina de restaura\347\343o testada, porque a aplica\347\343o passa a) Tj T* 0 Tw -0.5 0 Td (movimentar saldo de usu\341rio.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 375.8898 cm
+Q
+q
+1 0 0 1 78 354.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (3.2 Web app do Breakfast Club) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 351.8898 cm
+Q
+q
+1 0 0 1 78 337.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Telas de entrada, planos e pagamento da assinatura, com checkout fora das lojas de aplicativo.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 331.8898 cm
+Q
+q
+1 0 0 1 78 303.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 2.019661 Tw (Mapa de estabelecimentos participantes, com busca, filtro por categoria e faixa de pre\347o, e) Tj T* 0 Tw -0.5 0 Td (p\341gina de detalhe com menu, hor\341rio e endere\347o.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 297.8898 cm
+Q
+q
+1 0 0 1 78 269.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td .824276 Tw (Reserva com data, hor\341rio e n\372mero de pessoas, confirma\347\343o e cancelamento, com a reserva) Tj T* 0 Tw -0.5 0 Td (vis\355vel no painel do estabelecimento.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 263.8898 cm
+Q
+q
+1 0 0 1 78 249.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Carteira com saldo e pontos em destaque, recarga, extrato e transfer\352ncia entre usu\341rios.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 243.8898 cm
+Q
+q
+1 0 0 1 78 215.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td .236559 Tw (Programa de fidelidade: check-in no estabelecimento, selos com progresso, desafios, sequ\352ncia) Tj T* 0 Tw -0.5 0 Td (di\341ria e troca de pontos por benef\355cios.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 209.8898 cm
+Q
+q
+1 0 0 1 78 195.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Vouchers de patrocinadores, com c\363digo de resgate e controle de validade.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 189.8898 cm
+Q
+q
+1 0 0 1 78 175.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Perfil do usu\341rio, notifica\347\365es e indica\347\343o de novos membros.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 169.8898 cm
+Q
+q
+1 0 0 1 78 141.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 1.405559 Tw (Painel administrativo web, com gest\343o de estabelecimentos, membros, reservas, benef\355cios e) Tj T* 0 Tw -0.5 0 Td (relat\363rios de ocupa\347\343o e de assinaturas.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 135.8898 cm
+Q
+q
+1 0 0 1 78 114.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (3.3 Bilheteria Breakfast Weekend) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 111.8898 cm
+Q
+q
+1 0 0 1 78 97.88976 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Web app de venda de ingressos do festival, com sele\347\343o de edi\347\343o, data e quantidade.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 91.88976 cm
+Q
+q
+1 0 0 1 78 77.88976 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Pagamento por Pix e cart\343o, com confirma\347\343o autom\341tica e emiss\343o do ingresso.) Tj T* -0.5 0 Td ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+15 0 0 13.5 77.4 805.8898 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 94.1 807.0898 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 11 Tf
+13.2 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 426.6956 801.8898 Tm
+(Proposta Comercial) Tj
+T*
+ET
+q
+15 0 0 13.5 71.7 50.98976 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 88.4 52.18976 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 506.5956 53.88976 Tm
+(2\0575) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+15 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/SMask 16 0 R
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 471
+>>
+stream
+Gb"/$cV)/0(sQoh7W78s,[NT8`i^A\GS!oOX&M.fX[C:IJD`]2PQ/5YdX4d<Y9E3]?LeqcVTnklp[\0G&-iFFL]9Xo&!,$@X[q]FIBh%Xpg),G6G-j>4sfCis)L06SNlL;;TVD<E#BJk*\7DFdZ4%7^G)Rl>2tp8jfCtA?r"(bKunO9/rHPW-Hps1haR`q`h+C:Jd?6>-VU+=M[r`hHeGjiOR(SZa;&ZNb;pT,L@GYsi_MfVhd/4QI<[:Ai%`NG8u`W)I!Bb-We*@r`TOaB:7AqYeZs%,`RWm1*?!+9ET-&!QI64rMq_6Pad)-(@qj^2Fd1ln!e3ll.G2,09mbR<ajJ6Te/%81*6nW^d<Q#Satr<H^6Ud@b^,V?+Z%]i*+O#2kd%=':=VF<54:"(/C@n/$I`UIhM'b%@hU.+(C=;hRQ9b#mP&]=fg^&0Y8)$,Mj1B%c+m[4#6tJ=48]/.$gC.~>
+endstream
+endobj
+16 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 285
+>>
+stream
+Gb"/!_%":)$tKJf+=m(k\qeg]49u>A"djfD1'%b.$b/)SUf!@IrNr3l!=7R'B,b?`ph,9W@EMA6KL:4LB/h(obQ<O&jAg:]P7Jbn@GH^EHmF"U5>IG[4%&VeW7?;G4aA5i&-[\1lB<EB.1ps52@5gRcJGqbii;q?pppLf`FqK*;qrQ--l<(n&JQAn5Y8:5'$\;0Xo#=(:Yc-EF^@hUFAko*X5b-'-bG`6mTWZ][eJJ>o,)W*6E.X/>3h\$mWou++n_ep<F1/MXICl`5N[hF`#B\bY=S~>
+endstream
+endobj
+17 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/SMask 18 0 R
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 962
+>>
+stream
+Gau1,$]g`A&BElUi%?Y`T;SoOS9TqBa'j5V[7ujRo_X-2c2p1Vf0js3s%I#Bnmcj1*GVuc?'8`OAY^(71ScjPT!*,RG!(u.VS@!EEO2n-RtZ?t7<E;dIIm<'X8?Gncm;!aaN1("+=$J@S`b+"UJYI_QZca39KQ/I=#N*(mlY6K^HksPaM'rHPm4C>`aoS@(B%%ifaV*`JBW"<h[Q*IB=7W@;@VCK\Q7=oPga\2_h@6cjH"BE^%G1OchoFXG`-AM9N+WKUJ2;%Op#1rd6"B0jF^'GJ%g\lA5bloeOphZ8EilBadq[H"HSb]<+O'NpQi+de/7JH;k<A"]@UR]1UA?6!&)E;ebO`H]QcN#2%hFj5h%ihh?>FZPt,lWH#Ic>rWO2)9J]@?6rWTK30J"kQ+=LF<LqIsX;U)*Zu`!Y36U)*D.qM"14PIfIc`W-mYSGR7j\I>V'(s:bB\4/Jl(VFN#`1D*7H@q^ZNbpmL6P'_]@:cGQFe@q7OUoC:hr)SJ0I(^Yh3*7l`q4C//+X0pEDhgN;*g-&CV3afJMR_?DqWh=\JB)B7;69pb])a!=%=TOikM[Co/b]k'EthAt[80?CuETOG2hA?'eSlY2;PLD.T]-8os;mj`WV&;9r&(&rA]hA%>nQW9+iWIg'4$/\j5\?Pn_H`&:)V=R*[(LoC)O2<h"8Wu>)mWi<0Hcu$dH!.W?L.kY,.\Eg9h(\M7><@4bDMN`!"6=nsSuf6C3$gl?mZIGE05pC2*DHdT&sJiVUIWGQ)tWio45P'MjG1pFpg=9;4q/M\00AOr^Q@362flp7#B[QuUp(5:P\N%q9NO6lM*lSfPSI',Por"8$W.daklgjq,f%cZ,[pRhp-G]cP-8oW8>:C5l>Y#/XYHbnMWKRQm\Z4D[u=Q!c4M9;'CS8R+(J;^5>A1q&&V"lnE_r*SDhCu3r4KO^TrKUcX]0BF]nMLcl&T5~>
+endstream
+endobj
+18 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 481
+>>
+stream
+Gar7X;8roQ=BK<UhS'/K[uo=PDJp(pSabn5T&"@qB.nl8qQqM`s"ssL#-;50$)1uKRH"o#Qu!D!5Tip\&P\SYbE$eIZ[_oL#mB-!RF#Kt^]3!.2YYOa$YReW4WT&Yp@g:j(1q/j-?OTCZ@#>>9T0gk!m5B^b2+et0?@51VACZXp]"SCn79?fqrdplh7Ij",3`\/:%I7NAH21H1XP4CJo%Ni+H'[6Cib)3fASFYokOnrFd*+_XB<Ais15`,et;E6XB9!N7G!"gqtK!'2J*^UZ4'DN?5)HX3H?o2]&\UN@`AH_1CH!p(,7[(0o!L(VpJq81%NlL2fIQeGmabic="^?r`INkU4*$@/$ja*4c:JQoOIHW[$Zi^$>9;4LILq"S@LH0mX<8Cp@gd>QAH1`R$)p3HMII'K:d(srs-a(Yu?5SAIpEkoD]mDr!*7am+8j.@,U1lRns(^KnIheb^o^@?igtQQk'0Dau3B~>
+endstream
+endobj
+19 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+20 0 obj
+<<
+/Contents 21 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/XObject <<
+/FormXob.097985cfe0e109531c4985bcf3858e1f 22 0 R
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d 24 0 R
+>>
+/Font <<
+/F1 10 0 R
+/F1-0 26 0 R
+/F2 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+21 0 obj
+<<
+/Length 9168
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 771.8898 cm
+Q
+q
+1 0 0 1 78 757.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Ingresso digital com c\363digo de valida\347\343o, e leitura na portaria por operador autenticado.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 751.8898 cm
+Q
+q
+1 0 0 1 78 737.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Relat\363rio de vendas por edi\347\343o, com reembolso e cancelamento.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 731.8898 cm
+Q
+q
+1 0 0 1 78 703.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 1.355466 Tw (Integra\347\343o com o clube: membro assinante tem pre\347o diferenciado, identificado por e-mail ou) Tj T* 0 Tw -0.5 0 Td (CPF no momento da compra.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 697.8898 cm
+Q
+q
+1 0 0 1 78 676.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (3.4 Aplicativos nativos iOS e Android) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 673.8898 cm
+Q
+q
+1 0 0 1 78 659.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Aplicativo \372nico, publicado na App Store e na Play Store, consumindo a mesma API do web app.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 653.8898 cm
+Q
+q
+1 0 0 1 78 639.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Notifica\347\343o push para confirma\347\343o de reserva, vencimento de assinatura e novas ofertas.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 633.8898 cm
+Q
+q
+1 0 0 1 78 619.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Mapa com localiza\347\343o do usu\341rio e rota at\351 o estabelecimento escolhido.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 613.8898 cm
+Q
+q
+1 0 0 1 78 599.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Carteira digital do ingresso e dos vouchers, acess\355vel sem conex\343o.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 593.8898 cm
+Q
+q
+1 0 0 1 78 579.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Publica\347\343o nas duas lojas, com contas de desenvolvedor fornecidas pelo cliente.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 573.8898 cm
+Q
+q
+1 0 0 1 78 543.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (4. Prazo e valor por etapa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 537.8898 cm
+Q
+q
+1 0 0 1 78 495.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL .270329 Tw (A entrega \351 faseada, com prazo e valor fechados por etapa. Cada etapa \351 um produto utiliz\341vel, e) Tj T* 0 Tw 2.369099 Tw (a aprova\347\343o de uma n\343o obriga a contrata\347\343o da seguinte. A Etapa 3 depende da Etapa 1) Tj T* 0 Tw (conclu\355da, e a Etapa 4 depende de autoriza\347\343o de terceiro.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 489.8898 cm
+Q
+q
+1 0 0 1 78 487.8898 cm
+Q
+q
+1 0 0 1 78 485.8898 cm
+Q
+q
+1 0 0 1 72 473.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Etapa) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 0 cm
+Q
+q
+1 0 0 1 39.10205 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Escopo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 39.10205 0 cm
+Q
+q
+1 0 0 1 309.8674 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Prazo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 309.8674 0 cm
+Q
+q
+1 0 0 1 382.0715 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F2 9 Tf 12 TL (Valor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 382.0715 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 465.8898 cm
+Q
+q
+1 0 0 1 72 441.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 39.10205 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Back-end do clube, web app completo com login, saldo, pontos,) Tj T* (reserva e assinatura reais) Tj T* ET
+Q
+Q
+q
+1 0 0 1 39.10205 0 cm
+Q
+q
+1 0 0 1 309.8674 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (9 semanas) Tj T* ET
+Q
+Q
+q
+1 0 0 1 309.8674 12 cm
+Q
+q
+1 0 0 1 382.0715 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (R$ 27.000,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 382.0715 12 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 433.8898 cm
+Q
+q
+1 0 0 1 72 409.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 39.10205 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Bilheteria web app, com Pix, cart\343o, ingresso digital e valida\347\343o) Tj T* (na portaria) Tj T* ET
+Q
+Q
+q
+1 0 0 1 39.10205 0 cm
+Q
+q
+1 0 0 1 309.8674 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (4 semanas) Tj T* ET
+Q
+Q
+q
+1 0 0 1 309.8674 12 cm
+Q
+q
+1 0 0 1 382.0715 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (R$ 7.200,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 382.0715 12 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 401.8898 cm
+Q
+q
+1 0 0 1 72 377.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 12 cm
+Q
+q
+1 0 0 1 39.10205 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Aplicativos nativos iOS e Android, com push, mapa e carteira) Tj T* (digital) Tj T* ET
+Q
+Q
+q
+1 0 0 1 39.10205 0 cm
+Q
+q
+1 0 0 1 309.8674 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (6 semanas) Tj T* ET
+Q
+Q
+q
+1 0 0 1 309.8674 12 cm
+Q
+q
+1 0 0 1 382.0715 12 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (R$ 15.300,00) Tj T* ET
+Q
+Q
+q
+1 0 0 1 382.0715 12 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 369.8898 cm
+Q
+q
+1 0 0 1 72 357.8898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 3 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 3 0 cm
+Q
+q
+1 0 0 1 39.10205 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Integra\347\343o com o sistema de reservas do festival) Tj T* ET
+Q
+Q
+q
+1 0 0 1 39.10205 0 cm
+Q
+q
+1 0 0 1 309.8674 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (a dimensionar) Tj T* ET
+Q
+Q
+q
+1 0 0 1 309.8674 0 cm
+Q
+q
+1 0 0 1 382.0715 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (sob or\347amento) Tj T* ET
+Q
+Q
+q
+1 0 0 1 382.0715 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 78 347.8898 cm
+Q
+q
+1 0 0 1 78 343.8898 cm
+Q
+q
+1 0 0 1 78 301.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL 1.158373 Tw (Valor do escopo completo das Etapas 1 a 3, executadas em sequ\352ncia: R$ 49.500,00. O prazo) Tj T* 0 Tw .713706 Tw (somado \351 de 19 semanas de desenvolvimento e testes, contadas da assinatura do contrato e da) Tj T* 0 Tw (entrega dos acessos necess\341rios.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 295.8898 cm
+Q
+q
+1 0 0 1 78 239.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46 Tm /F1 10 Tf 14 TL .768189 Tw (A estimativa de esfor\347o das Etapas 1 a 3 \351 de 550 horas. Considerando a Etapa 4 no pior caso,) Tj T* 0 Tw 2.086373 Tw (com integra\347\343o manual e sem interface documentada, o total chega a 880 horas. O valor foi) Tj T* 0 Tw 5.571199 Tw (apurado a R$ 90,00 por hora, abaixo da faixa praticada no mercado brasileiro para) Tj T* 0 Tw (desenvolvimento full stack.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 233.8898 cm
+Q
+q
+1 0 0 1 78 203.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (5. O que est\341 inclu\355do) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 197.8898 cm
+Q
+q
+1 0 0 1 78 183.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Desenvolvimento, testes e publica\347\343o do que est\341 descrito na Etapa 3.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 177.8898 cm
+Q
+q
+1 0 0 1 78 163.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Ambiente de produ\347\343o em nuvem, com banco de dados, backup e monitoramento b\341sico.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 157.8898 cm
+Q
+q
+1 0 0 1 78 143.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Documenta\347\343o t\351cnica e manual de uso do painel administrativo.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 137.8898 cm
+Q
+q
+1 0 0 1 78 123.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Treinamento de at\351 4 horas para a equipe do cliente operar o sistema.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 117.8898 cm
+Q
+q
+1 0 0 1 78 103.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (30 dias de garantia sobre defeitos ap\363s cada entrega, sem custo adicional.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 97.88976 cm
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+15 0 0 13.5 77.4 805.8898 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 94.1 807.0898 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 11 Tf
+13.2 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 426.6956 801.8898 Tm
+(Proposta Comercial) Tj
+T*
+ET
+q
+15 0 0 13.5 71.7 50.98976 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 88.4 52.18976 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 506.5956 53.88976 Tm
+(3\0575) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+22 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/SMask 23 0 R
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 471
+>>
+stream
+Gb"/$cV)/0(sQoh7W78s,[NT8`i^A\GS!oOX&M.fX[C:IJD`]2PQ/5YdX4d<Y9E3]?LeqcVTnklp[\0G&-iFFL]9Xo&!,$@X[q]FIBh%Xpg),G6G-j>4sfCis)L06SNlL;;TVD<E#BJk*\7DFdZ4%7^G)Rl>2tp8jfCtA?r"(bKunO9/rHPW-Hps1haR`q`h+C:Jd?6>-VU+=M[r`hHeGjiOR(SZa;&ZNb;pT,L@GYsi_MfVhd/4QI<[:Ai%`NG8u`W)I!Bb-We*@r`TOaB:7AqYeZs%,`RWm1*?!+9ET-&!QI64rMq_6Pad)-(@qj^2Fd1ln!e3ll.G2,09mbR<ajJ6Te/%81*6nW^d<Q#Satr<H^6Ud@b^,V?+Z%]i*+O#2kd%=':=VF<54:"(/C@n/$I`UIhM'b%@hU.+(C=;hRQ9b#mP&]=fg^&0Y8)$,Mj1B%c+m[4#6tJ=48]/.$gC.~>
+endstream
+endobj
+23 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 285
+>>
+stream
+Gb"/!_%":)$tKJf+=m(k\qeg]49u>A"djfD1'%b.$b/)SUf!@IrNr3l!=7R'B,b?`ph,9W@EMA6KL:4LB/h(obQ<O&jAg:]P7Jbn@GH^EHmF"U5>IG[4%&VeW7?;G4aA5i&-[\1lB<EB.1ps52@5gRcJGqbii;q?pppLf`FqK*;qrQ--l<(n&JQAn5Y8:5'$\;0Xo#=(:Yc-EF^@hUFAko*X5b-'-bG`6mTWZ][eJJ>o,)W*6E.X/>3h\$mWou++n_ep<F1/MXICl`5N[hF`#B\bY=S~>
+endstream
+endobj
+24 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/SMask 25 0 R
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 962
+>>
+stream
+Gau1,$]g`A&BElUi%?Y`T;SoOS9TqBa'j5V[7ujRo_X-2c2p1Vf0js3s%I#Bnmcj1*GVuc?'8`OAY^(71ScjPT!*,RG!(u.VS@!EEO2n-RtZ?t7<E;dIIm<'X8?Gncm;!aaN1("+=$J@S`b+"UJYI_QZca39KQ/I=#N*(mlY6K^HksPaM'rHPm4C>`aoS@(B%%ifaV*`JBW"<h[Q*IB=7W@;@VCK\Q7=oPga\2_h@6cjH"BE^%G1OchoFXG`-AM9N+WKUJ2;%Op#1rd6"B0jF^'GJ%g\lA5bloeOphZ8EilBadq[H"HSb]<+O'NpQi+de/7JH;k<A"]@UR]1UA?6!&)E;ebO`H]QcN#2%hFj5h%ihh?>FZPt,lWH#Ic>rWO2)9J]@?6rWTK30J"kQ+=LF<LqIsX;U)*Zu`!Y36U)*D.qM"14PIfIc`W-mYSGR7j\I>V'(s:bB\4/Jl(VFN#`1D*7H@q^ZNbpmL6P'_]@:cGQFe@q7OUoC:hr)SJ0I(^Yh3*7l`q4C//+X0pEDhgN;*g-&CV3afJMR_?DqWh=\JB)B7;69pb])a!=%=TOikM[Co/b]k'EthAt[80?CuETOG2hA?'eSlY2;PLD.T]-8os;mj`WV&;9r&(&rA]hA%>nQW9+iWIg'4$/\j5\?Pn_H`&:)V=R*[(LoC)O2<h"8Wu>)mWi<0Hcu$dH!.W?L.kY,.\Eg9h(\M7><@4bDMN`!"6=nsSuf6C3$gl?mZIGE05pC2*DHdT&sJiVUIWGQ)tWio45P'MjG1pFpg=9;4q/M\00AOr^Q@362flp7#B[QuUp(5:P\N%q9NO6lM*lSfPSI',Por"8$W.daklgjq,f%cZ,[pRhp-G]cP-8oW8>:C5l>Y#/XYHbnMWKRQm\Z4D[u=Q!c4M9;'CS8R+(J;^5>A1q&&V"lnE_r*SDhCu3r4KO^TrKUcX]0BF]nMLcl&T5~>
+endstream
+endobj
+25 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 481
+>>
+stream
+Gar7X;8roQ=BK<UhS'/K[uo=PDJp(pSabn5T&"@qB.nl8qQqM`s"ssL#-;50$)1uKRH"o#Qu!D!5Tip\&P\SYbE$eIZ[_oL#mB-!RF#Kt^]3!.2YYOa$YReW4WT&Yp@g:j(1q/j-?OTCZ@#>>9T0gk!m5B^b2+et0?@51VACZXp]"SCn79?fqrdplh7Ij",3`\/:%I7NAH21H1XP4CJo%Ni+H'[6Cib)3fASFYokOnrFd*+_XB<Ais15`,et;E6XB9!N7G!"gqtK!'2J*^UZ4'DN?5)HX3H?o2]&\UN@`AH_1CH!p(,7[(0o!L(VpJq81%NlL2fIQeGmabic="^?r`INkU4*$@/$ja*4c:JQoOIHW[$Zi^$>9;4LILq"S@LH0mX<8Cp@gd>QAH1`R$)p3HMII'K:d(srs-a(Yu?5SAIpEkoD]mDr!*7am+8j.@,U1lRns(^KnIheb^o^@?igtQQk'0Dau3B~>
+endstream
+endobj
+26 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+27 0 obj
+<<
+/Contents 28 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/XObject <<
+/FormXob.097985cfe0e109531c4985bcf3858e1f 29 0 R
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d 31 0 R
+>>
+/Font <<
+/F1 10 0 R
+/F1-0 33 0 R
+/F2 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+28 0 obj
+<<
+/Length 7111
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 755.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (6. Premissas e riscos assumidos) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 749.8898 cm
+Q
+q
+1 0 0 1 78 721.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 14 TL 1.415623 Tw (Os pontos abaixo s\343o condi\347\365es para que o prazo e o valor se sustentem. Cada um deles, se) Tj T* 0 Tw (descumprido, recalcula o or\347amento.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 715.8898 cm
+Q
+q
+1 0 0 1 78 687.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td -0.024689 Tw (O cliente fornece as contas de desenvolvedor da App Store e da Play Store, e arca com as taxas) Tj T* 0 Tw -0.5 0 Td (de publica\347\343o.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 681.8898 cm
+Q
+q
+1 0 0 1 78 653.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 1.500349 Tw (O cliente contrata e mant\351m o gateway de pagamento e a conta em plataforma de envio de) Tj T* 0 Tw -0.5 0 Td (notifica\347\365es. As taxas de transa\347\343o s\343o do cliente.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 647.8898 cm
+Q
+q
+1 0 0 1 78 619.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 2.031828 Tw (O prot\363tipo entregue \351 usado como refer\352ncia de interface e de fluxo. Mudan\347a de escopo) Tj T* 0 Tw -0.5 0 Td (depois de uma etapa aprovada gera novo or\347amento.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 613.8898 cm
+Q
+q
+1 0 0 1 78 571.8898 cm
+q
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 32 Tm /F1 10 Tf 14 TL .5 0 Td 1.045039 Tw (A Etapa 4 depende de autoriza\347\343o de acesso ao sistema de reservas de terceiro, o DGuests.) Tj T* 0 Tw -0.5 0 Td 2.106828 Tw (Como n\343o h\341 interface p\372blica documentada, o prazo dessa etapa s\363 \351 definido depois do) Tj T* 0 Tw (retorno do fornecedor. Se o acesso for negado, a alternativa \351 reserva pr\363pria, or\347ada \340 parte.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 565.8898 cm
+Q
+q
+1 0 0 1 78 537.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td .788373 Tw (O servidor de produ\347\343o \351 dimensionado para at\351 50 mil usu\341rios cadastrados e 5 mil reservas) Tj T* 0 Tw -0.5 0 Td (por m\352s. Acima disso, o plano de infraestrutura \351 revisto em conjunto.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 531.8898 cm
+Q
+q
+1 0 0 1 78 503.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 2.823706 Tw (O c\363digo do prot\363tipo recebido \351 tratado como material de refer\352ncia do cliente e n\343o \351) Tj T* 0 Tw -0.5 0 Td (reutilizado em outros projetos. Ele \351 apagado ao fim da execu\347\343o, por decis\343o do cliente.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 497.8898 cm
+Q
+q
+1 0 0 1 78 467.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (7. Condi\347\365es comerciais) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 461.8898 cm
+Q
+q
+1 0 0 1 78 447.8898 cm
+q
+BT 1 0 0 1 0 4 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 4 Tm /F1 10 Tf 14 TL .5 0 Td (Nota fiscal emitida para cada parcela recebida.) Tj T* -0.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 441.8898 cm
+Q
+q
+1 0 0 1 78 413.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td .352849 Tw (Pagamento em 40% na assinatura, 30% na entrega da metade do prazo e 30% na entrega final) Tj T* 0 Tw -0.5 0 Td (da etapa.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 407.8898 cm
+Q
+q
+1 0 0 1 78 379.8898 cm
+q
+BT 1 0 0 1 0 18 Tm /F1 10 Tf 12 TL 0 0 0 rg (\177) Tj ET
+0 0 0 rg
+BT 1 0 0 1 9 18 Tm /F1 10 Tf 14 TL .5 0 Td 4.346559 Tw (Manuten\347\343o mensal opcional, com corre\347\343o de defeitos, atualiza\347\343o de depend\352ncia e) Tj T* 0 Tw -0.5 0 Td (monitoramento, or\347ada em 10% do valor da etapa por m\352s.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 373.8898 cm
+Q
+q
+1 0 0 1 78 352.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 2.5 Tm /F2 10.5 Tf 13 TL (Cl\341usula de cumprimento) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 349.8898 cm
+Q
+q
+1 0 0 1 78 293.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46 Tm /F1 10 Tf 14 TL 1.049039 Tw (Atraso n\343o justificado do desenvolvedor: multa de 2% por semana de atraso, limitada a 10% do) Tj T* 0 Tw .965866 Tw (valor da etapa. Atraso no pagamento: o trabalho \351 suspenso e o prazo volta a correr a partir da) Tj T* 0 Tw 2.662738 Tw (confirma\347\343o do pagamento. Escopo novo \351 or\347ado \340 parte, por escrito, antes da execu\347\343o.) Tj T* 0 Tw (Mudan\347a de regra de neg\363cio depois de uma etapa entregue gera novo or\347amento.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 287.8898 cm
+Q
+q
+1 0 0 1 78 257.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (8. Por que esta proposta \351 segura para o cliente) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 251.8898 cm
+Q
+q
+1 0 0 1 78 209.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL .534447 Tw (O festival j\341 provou a demanda: mais de 150 mil pessoas passaram por 20 edi\347\365es, com 93% de) Tj T* 0 Tw .808256 Tw (satisfa\347\343o. O clube transforma esse p\372blico em receita recorrente, e a bilheteria resolve a venda) Tj T* 0 Tw (de ingresso dentro da mesma plataforma, em vez de depender de ferramenta de terceiro.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 203.8898 cm
+Q
+q
+1 0 0 1 78 133.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 60 Tm /F1 10 Tf 14 TL .679039 Tw (A compara\347\343o com a alternativa de mercado \351 direta. A plataforma de gest\343o de reservas usada) Tj T* 0 Tw .802966 Tw (hoje cobra R$ 239,90 por m\352s por estabelecimento. Com 20 estabelecimentos participantes, s\343o) Tj T* 0 Tw -0.088495 Tw (R$ 4.798,00 por m\352s, ou R$ 57.576,00 por ano, sem clube de assinatura, sem bilheteria e sem que) Tj T* 0 Tw 1.192224 Tw (a marca e os dados sejam do festival. O escopo completo proposto aqui custa menos que dois) Tj T* 0 Tw (anos dessa assinatura, e entrega produto pr\363prio, com marca, dados e receita do lado do cliente.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 127.8898 cm
+Q
+q
+1 0 0 1 78 85.88976 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 32 Tm /F1 10 Tf 14 TL .625866 Tw (O prazo de 19 semanas cabe no calend\341rio: a assinatura em outubro de 2026 leva o clube ao ar) Tj T* 0 Tw 2.118256 Tw (em mar\347o de 2027, dois meses depois do lan\347amento previsto para janeiro, com a bilheteria) Tj T* 0 Tw (dispon\355vel antes, ainda em janeiro, porque a Etapa 2 pode ser antecipada junto com a Etapa 1.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 79.88976 cm
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+15 0 0 13.5 77.4 805.8898 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 94.1 807.0898 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 11 Tf
+13.2 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 426.6956 801.8898 Tm
+(Proposta Comercial) Tj
+T*
+ET
+q
+15 0 0 13.5 71.7 50.98976 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 88.4 52.18976 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 506.5956 53.88976 Tm
+(4\0575) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+29 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/SMask 30 0 R
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 471
+>>
+stream
+Gb"/$cV)/0(sQoh7W78s,[NT8`i^A\GS!oOX&M.fX[C:IJD`]2PQ/5YdX4d<Y9E3]?LeqcVTnklp[\0G&-iFFL]9Xo&!,$@X[q]FIBh%Xpg),G6G-j>4sfCis)L06SNlL;;TVD<E#BJk*\7DFdZ4%7^G)Rl>2tp8jfCtA?r"(bKunO9/rHPW-Hps1haR`q`h+C:Jd?6>-VU+=M[r`hHeGjiOR(SZa;&ZNb;pT,L@GYsi_MfVhd/4QI<[:Ai%`NG8u`W)I!Bb-We*@r`TOaB:7AqYeZs%,`RWm1*?!+9ET-&!QI64rMq_6Pad)-(@qj^2Fd1ln!e3ll.G2,09mbR<ajJ6Te/%81*6nW^d<Q#Satr<H^6Ud@b^,V?+Z%]i*+O#2kd%=':=VF<54:"(/C@n/$I`UIhM'b%@hU.+(C=;hRQ9b#mP&]=fg^&0Y8)$,Mj1B%c+m[4#6tJ=48]/.$gC.~>
+endstream
+endobj
+30 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 285
+>>
+stream
+Gb"/!_%":)$tKJf+=m(k\qeg]49u>A"djfD1'%b.$b/)SUf!@IrNr3l!=7R'B,b?`ph,9W@EMA6KL:4LB/h(obQ<O&jAg:]P7Jbn@GH^EHmF"U5>IG[4%&VeW7?;G4aA5i&-[\1lB<EB.1ps52@5gRcJGqbii;q?pppLf`FqK*;qrQ--l<(n&JQAn5Y8:5'$\;0Xo#=(:Yc-EF^@hUFAko*X5b-'-bG`6mTWZ][eJJ>o,)W*6E.X/>3h\$mWou++n_ep<F1/MXICl`5N[hF`#B\bY=S~>
+endstream
+endobj
+31 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/SMask 32 0 R
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 962
+>>
+stream
+Gau1,$]g`A&BElUi%?Y`T;SoOS9TqBa'j5V[7ujRo_X-2c2p1Vf0js3s%I#Bnmcj1*GVuc?'8`OAY^(71ScjPT!*,RG!(u.VS@!EEO2n-RtZ?t7<E;dIIm<'X8?Gncm;!aaN1("+=$J@S`b+"UJYI_QZca39KQ/I=#N*(mlY6K^HksPaM'rHPm4C>`aoS@(B%%ifaV*`JBW"<h[Q*IB=7W@;@VCK\Q7=oPga\2_h@6cjH"BE^%G1OchoFXG`-AM9N+WKUJ2;%Op#1rd6"B0jF^'GJ%g\lA5bloeOphZ8EilBadq[H"HSb]<+O'NpQi+de/7JH;k<A"]@UR]1UA?6!&)E;ebO`H]QcN#2%hFj5h%ihh?>FZPt,lWH#Ic>rWO2)9J]@?6rWTK30J"kQ+=LF<LqIsX;U)*Zu`!Y36U)*D.qM"14PIfIc`W-mYSGR7j\I>V'(s:bB\4/Jl(VFN#`1D*7H@q^ZNbpmL6P'_]@:cGQFe@q7OUoC:hr)SJ0I(^Yh3*7l`q4C//+X0pEDhgN;*g-&CV3afJMR_?DqWh=\JB)B7;69pb])a!=%=TOikM[Co/b]k'EthAt[80?CuETOG2hA?'eSlY2;PLD.T]-8os;mj`WV&;9r&(&rA]hA%>nQW9+iWIg'4$/\j5\?Pn_H`&:)V=R*[(LoC)O2<h"8Wu>)mWi<0Hcu$dH!.W?L.kY,.\Eg9h(\M7><@4bDMN`!"6=nsSuf6C3$gl?mZIGE05pC2*DHdT&sJiVUIWGQ)tWio45P'MjG1pFpg=9;4q/M\00AOr^Q@362flp7#B[QuUp(5:P\N%q9NO6lM*lSfPSI',Por"8$W.daklgjq,f%cZ,[pRhp-G]cP-8oW8>:C5l>Y#/XYHbnMWKRQm\Z4D[u=Q!c4M9;'CS8R+(J;^5>A1q&&V"lnE_r*SDhCu3r4KO^TrKUcX]0BF]nMLcl&T5~>
+endstream
+endobj
+32 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 481
+>>
+stream
+Gar7X;8roQ=BK<UhS'/K[uo=PDJp(pSabn5T&"@qB.nl8qQqM`s"ssL#-;50$)1uKRH"o#Qu!D!5Tip\&P\SYbE$eIZ[_oL#mB-!RF#Kt^]3!.2YYOa$YReW4WT&Yp@g:j(1q/j-?OTCZ@#>>9T0gk!m5B^b2+et0?@51VACZXp]"SCn79?fqrdplh7Ij",3`\/:%I7NAH21H1XP4CJo%Ni+H'[6Cib)3fASFYokOnrFd*+_XB<Ais15`,et;E6XB9!N7G!"gqtK!'2J*^UZ4'DN?5)HX3H?o2]&\UN@`AH_1CH!p(,7[(0o!L(VpJq81%NlL2fIQeGmabic="^?r`INkU4*$@/$ja*4c:JQoOIHW[$Zi^$>9;4LILq"S@LH0mX<8Cp@gd>QAH1`R$)p3HMII'K:d(srs-a(Yu?5SAIpEkoD]mDr!*7am+8j.@,U1lRns(^KnIheb^o^@?igtQQk'0Dau3B~>
+endstream
+endobj
+33 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+34 0 obj
+<<
+/Contents 35 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/XObject <<
+/FormXob.097985cfe0e109531c4985bcf3858e1f 36 0 R
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d 38 0 R
+>>
+/Font <<
+/F1 10 0 R
+/F1-0 40 0 R
+/F2 12 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+35 0 obj
+<<
+/Length 1565
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 755.8898 cm
+q
+.105882 .164706 .290196 rg
+BT 1 0 0 1 0 3 Tm /F2 13 Tf 16 TL (9. Pr\363ximo passo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 749.8898 cm
+Q
+q
+1 0 0 1 78 693.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 46 Tm /F1 10 Tf 14 TL -0.024026 Tw (Com a aprova\347\343o desta proposta, emitimos o contrato com o escopo e o prazo da etapa escolhida,) Tj T* 0 Tw 1.02327 Tw (e o desenvolvimento come\347a em at\351 5 dias \372teis ap\363s a assinatura e a entrega dos acessos. A) Tj T* 0 Tw .380373 Tw (Etapa 1 pode ser iniciada isoladamente, o que permite ao cliente ver o produto funcionando antes) Tj T* 0 Tw (de decidir pelas etapas seguintes.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 687.8898 cm
+Q
+q
+1 0 0 1 78 675.8898 cm
+Q
+q
+1 0 0 1 78 648.8898 cm
+q
+BT 1 0 0 1 0 17.5 Tm 13.5 TL /F1 9.5 Tf .290196 .333333 .407843 rg (Jonas Filho \267 JF Dev) Tj  T* (Desenvolvimento full stack, do levantamento \340 publica\347\343o) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 646.8898 cm
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+q
+15 0 0 13.5 77.4 805.8898 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 94.1 807.0898 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 11 Tf
+13.2 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 426.6956 801.8898 Tm
+(Proposta Comercial) Tj
+T*
+ET
+q
+15 0 0 13.5 71.7 50.98976 cm
+/FormXob.0d7898339483b4f6e7a9c23c211e5e8d Do
+Q
+q
+62.06667 0 0 9.8 88.4 52.18976 cm
+/FormXob.097985cfe0e109531c4985bcf3858e1f Do
+Q
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+0 0 0 rg
+BT
+1 0 0 1 506.5956 53.88976 Tm
+(5\0575) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+36 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/SMask 37 0 R
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 471
+>>
+stream
+Gb"/$cV)/0(sQoh7W78s,[NT8`i^A\GS!oOX&M.fX[C:IJD`]2PQ/5YdX4d<Y9E3]?LeqcVTnklp[\0G&-iFFL]9Xo&!,$@X[q]FIBh%Xpg),G6G-j>4sfCis)L06SNlL;;TVD<E#BJk*\7DFdZ4%7^G)Rl>2tp8jfCtA?r"(bKunO9/rHPW-Hps1haR`q`h+C:Jd?6>-VU+=M[r`hHeGjiOR(SZa;&ZNb;pT,L@GYsi_MfVhd/4QI<[:Ai%`NG8u`W)I!Bb-We*@r`TOaB:7AqYeZs%,`RWm1*?!+9ET-&!QI64rMq_6Pad)-(@qj^2Fd1ln!e3ll.G2,09mbR<ajJ6Te/%81*6nW^d<Q#Satr<H^6Ud@b^,V?+Z%]i*+O#2kd%=':=VF<54:"(/C@n/$I`UIhM'b%@hU.+(C=;hRQ9b#mP&]=fg^&0Y8)$,Mj1B%c+m[4#6tJ=48]/.$gC.~>
+endstream
+endobj
+37 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 15
+/Subtype /Image
+/Type /XObject
+/Width 95
+/Length 285
+>>
+stream
+Gb"/!_%":)$tKJf+=m(k\qeg]49u>A"djfD1'%b.$b/)SUf!@IrNr3l!=7R'B,b?`ph,9W@EMA6KL:4LB/h(obQ<O&jAg:]P7Jbn@GH^EHmF"U5>IG[4%&VeW7?;G4aA5i&-[\1lB<EB.1ps52@5gRcJGqbii;q?pppLf`FqK*;qrQ--l<(n&JQAn5Y8:5'$\;0Xo#=(:Yc-EF^@hUFAko*X5b-'-bG`6mTWZ][eJJ>o,)W*6E.X/>3h\$mWou++n_ep<F1/MXICl`5N[hF`#B\bY=S~>
+endstream
+endobj
+38 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceRGB
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/SMask 39 0 R
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 962
+>>
+stream
+Gau1,$]g`A&BElUi%?Y`T;SoOS9TqBa'j5V[7ujRo_X-2c2p1Vf0js3s%I#Bnmcj1*GVuc?'8`OAY^(71ScjPT!*,RG!(u.VS@!EEO2n-RtZ?t7<E;dIIm<'X8?Gncm;!aaN1("+=$J@S`b+"UJYI_QZca39KQ/I=#N*(mlY6K^HksPaM'rHPm4C>`aoS@(B%%ifaV*`JBW"<h[Q*IB=7W@;@VCK\Q7=oPga\2_h@6cjH"BE^%G1OchoFXG`-AM9N+WKUJ2;%Op#1rd6"B0jF^'GJ%g\lA5bloeOphZ8EilBadq[H"HSb]<+O'NpQi+de/7JH;k<A"]@UR]1UA?6!&)E;ebO`H]QcN#2%hFj5h%ihh?>FZPt,lWH#Ic>rWO2)9J]@?6rWTK30J"kQ+=LF<LqIsX;U)*Zu`!Y36U)*D.qM"14PIfIc`W-mYSGR7j\I>V'(s:bB\4/Jl(VFN#`1D*7H@q^ZNbpmL6P'_]@:cGQFe@q7OUoC:hr)SJ0I(^Yh3*7l`q4C//+X0pEDhgN;*g-&CV3afJMR_?DqWh=\JB)B7;69pb])a!=%=TOikM[Co/b]k'EthAt[80?CuETOG2hA?'eSlY2;PLD.T]-8os;mj`WV&;9r&(&rA]hA%>nQW9+iWIg'4$/\j5\?Pn_H`&:)V=R*[(LoC)O2<h"8Wu>)mWi<0Hcu$dH!.W?L.kY,.\Eg9h(\M7><@4bDMN`!"6=nsSuf6C3$gl?mZIGE05pC2*DHdT&sJiVUIWGQ)tWio45P'MjG1pFpg=9;4q/M\00AOr^Q@362flp7#B[QuUp(5:P\N%q9NO6lM*lSfPSI',Por"8$W.daklgjq,f%cZ,[pRhp-G]cP-8oW8>:C5l>Y#/XYHbnMWKRQm\Z4D[u=Q!c4M9;'CS8R+(J;^5>A1q&&V"lnE_r*SDhCu3r4KO^TrKUcX]0BF]nMLcl&T5~>
+endstream
+endobj
+39 0 obj
+<<
+/BitsPerComponent 8
+/ColorSpace /DeviceGray
+/Decode [ 0 1 ]
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Height 27
+/Subtype /Image
+/Type /XObject
+/Width 30
+/Length 481
+>>
+stream
+Gar7X;8roQ=BK<UhS'/K[uo=PDJp(pSabn5T&"@qB.nl8qQqM`s"ssL#-;50$)1uKRH"o#Qu!D!5Tip\&P\SYbE$eIZ[_oL#mB-!RF#Kt^]3!.2YYOa$YReW4WT&Yp@g:j(1q/j-?OTCZ@#>>9T0gk!m5B^b2+et0?@51VACZXp]"SCn79?fqrdplh7Ij",3`\/:%I7NAH21H1XP4CJo%Ni+H'[6Cib)3fASFYokOnrFd*+_XB<Ais15`,et;E6XB9!N7G!"gqtK!'2J*^UZ4'DN?5)HX3H?o2]&\UN@`AH_1CH!p(,7[(0o!L(VpJq81%NlL2fIQeGmabic="^?r`INkU4*$@/$ja*4c:JQoOIHW[$Zi^$>9;4LILq"S@LH0mX<8Cp@gd>QAH1`R$)p3HMII'K:d(srs-a(Yu?5SAIpEkoD]mDr!*7am+8j.@,U1lRns(^KnIheb^o^@?igtQQk'0Dau3B~>
+endstream
+endobj
+40 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 41
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000141 00000 n 
+0000000190 00000 n 
+0000000547 00000 n 
+0000008563 00000 n 
+0000009233 00000 n 
+0000009721 00000 n 
+0000010882 00000 n 
+0000011566 00000 n 
+0000011674 00000 n 
+0000011782 00000 n 
+0000011895 00000 n 
+0000012256 00000 n 
+0000020904 00000 n 
+0000021576 00000 n 
+0000022065 00000 n 
+0000023228 00000 n 
+0000023913 00000 n 
+0000024021 00000 n 
+0000024382 00000 n 
+0000033603 00000 n 
+0000034275 00000 n 
+0000034764 00000 n 
+0000035927 00000 n 
+0000036612 00000 n 
+0000036720 00000 n 
+0000037081 00000 n 
+0000044245 00000 n 
+0000044917 00000 n 
+0000045406 00000 n 
+0000046569 00000 n 
+0000047254 00000 n 
+0000047362 00000 n 
+0000047723 00000 n 
+0000049341 00000 n 
+0000050013 00000 n 
+0000050502 00000 n 
+0000051665 00000 n 
+0000052350 00000 n 
+trailer
+<<
+/Size 41
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+52458
+%%EOF

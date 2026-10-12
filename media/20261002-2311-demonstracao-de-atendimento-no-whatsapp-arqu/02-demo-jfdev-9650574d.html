@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JF Dev — demonstração de atendimento automático no WhatsApp</title>
+<style>
+  :root {
+    --fundo:#0d1117; --fundo2:#161b22; --card:#1c2128; --linha:#2b323b;
+    --texto:#e6edf3; --branco:#f5f7fa; --suave:#9aa6b2; --fraco:#6b7681;
+    --lima:#25d366; --lima-esc:#075e54; --lima-fundo:#0b3d34;
+    --ambar:#fbbf24; --azul:#60a5fa; --erro:#f87171;
+    --raio:12px; --fonte:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--fundo); color:var(--texto); font-family:var(--fonte);
+         font-size:15px; line-height:1.55; min-height:100vh; padding:22px; }
+  h1 { font-size:19px; letter-spacing:-.2px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:1.6px; color:var(--suave);
+       margin-bottom:12px; font-weight:700; }
+  .sub { color:var(--suave); font-size:13.5px; margin-top:4px; }
+
+  .grade { display:grid; grid-template-columns:minmax(320px,400px) 1fr; gap:24px;
+           max-width:1180px; margin:0 auto; align-items:start; }
+  @media (max-width:900px){ .grade { grid-template-columns:1fr; } }
+
+  /* ---------- telefone ---------- */
+  .tel { background:#0b0f14; border:1px solid var(--linha); border-radius:26px;
+         padding:12px; box-shadow:0 18px 50px rgba(0,0,0,.55); }
+  .tel-topo { display:flex; align-items:center; gap:10px; padding:8px 8px 12px;
+              border-bottom:1px solid var(--linha); }
+  .avatar { width:38px; height:38px; border-radius:50%; background:var(--lima-esc);
+            color:var(--lima); display:flex; align-items:center; justify-content:center;
+            font-weight:800; font-size:14px; flex:0 0 auto; }
+  .tel-nome { font-weight:700; color:var(--branco); font-size:14.5px; }
+  .tel-status { font-size:11.5px; color:var(--suave); }
+  .tel-status.fora { color:var(--ambar); }
+  .janela { height:520px; overflow-y:auto; padding:14px 12px; display:flex;
+            flex-direction:column; gap:7px; background:#0f141a; }
+  .janela::-webkit-scrollbar { width:7px; }
+  .janela::-webkit-scrollbar-thumb { background:#2b323b; border-radius:4px; }
+
+  .dia { text-align:center; font-size:11px; color:var(--fraco); background:#182029;
+         padding:4px 12px; border-radius:8px; margin:6px auto; width:max-content; }
+  .aviso { font-size:12.5px; color:var(--suave); background:#182029; padding:7px 11px;
+           border-radius:8px; border-left:2px solid var(--lima); margin:2px 0 6px; }
+
+  .msg { max-width:84%; padding:8px 11px; border-radius:12px; font-size:14.2px;
+         position:relative; word-wrap:break-word; }
+  .msg.bot { background:var(--card); color:var(--texto); border-bottom-left-radius:4px;
+             align-self:flex-start; }
+  .msg.eu { background:var(--lima-esc); color:#d7ffe9; border-bottom-right-radius:4px;
+            align-self:flex-end; }
+  .msg .hora { font-size:10px; opacity:.62; text-align:right; margin-top:3px; }
+  .msg.eu .hora { color:#a7f3d0; }
+  .digitando { align-self:flex-start; background:var(--card); border-radius:12px;
+              border-bottom-left-radius:4px; padding:11px 13px; color:var(--fraco); font-size:13px; }
+  .digitando i { display:inline-block; width:5px; height:5px; border-radius:50%;
+                 background:var(--suave); margin-right:3px; animation:pula 1.2s infinite; }
+  .digitando i:nth-child(2){ animation-delay:.18s } .digitando i:nth-child(3){ animation-delay:.36s }
+  @keyframes pula { 0%,60%,100%{transform:translateY(0);opacity:.45} 30%{transform:translateY(-4px);opacity:1} }
+
+  .campo { display:flex; gap:8px; margin-top:10px; }
+  .campo input { flex:1; background:#161b22; border:1px solid var(--linha); color:var(--branco);
+                 padding:11px 13px; border-radius:20px; font-size:14px; font-family:var(--fonte); }
+  .campo input:focus { outline:none; border-color:var(--lima); }
+  .campo button { background:var(--lima-esc); color:var(--lima); border:0; border-radius:20px;
+                  padding:0 17px; font-size:14px; font-weight:700; cursor:pointer; }
+  .atalhos { display:flex; flex-wrap:wrap; gap:6px; margin-top:9px; }
+  .atalho { background:#161b22; border:1px solid var(--linha); color:var(--suave);
+            padding:6px 11px; border-radius:14px; font-size:12.4px; cursor:pointer; }
+  .atalho:hover { border-color:var(--lima); color:var(--lima); }
+
+  /* ---------- painel ---------- */
+  .painel { background:var(--fundo2); border:1px solid var(--linha); border-radius:var(--raio);
+            padding:16px; margin-bottom:16px; }
+  .passo { display:flex; gap:11px; padding:9px 0; border-bottom:1px solid var(--linha); }
+  .passo:last-child { border-bottom:0; }
+  .passo .min { flex:0 0 auto; width:23px; height:23px; border-radius:50%;
+                background:var(--lima-fundo); color:var(--lima); font-size:12px;
+                font-weight:800; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+  .passo .txt b { color:var(--branco); font-weight:700; }
+  .passo .txt span { display:block; color:var(--suave); font-size:13.2px; }
+  .passo .tempo { margin-left:auto; font-size:11.5px; color:var(--fraco); white-space:nowrap; padding-left:8px; }
+
+  .grade2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:1100px){ .grade2 { grid-template-columns:1fr; } }
+
+  .presets { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+  .preset { background:#161b22; border:1px solid var(--linha); color:var(--suave);
+            padding:7px 12px; border-radius:8px; font-size:12.8px; cursor:pointer; }
+  .preset.on { border-color:var(--lima); color:var(--lima); background:var(--lima-fundo); }
+
+  label { display:block; font-size:11.5px; text-transform:uppercase; letter-spacing:1.1px;
+          color:var(--fraco); margin:11px 0 4px; font-weight:700; }
+  input.t, textarea, select { width:100%; background:#0d1117; border:1px solid var(--linha);
+          color:var(--branco); padding:8px 10px; border-radius:8px; font-size:13.6px;
+          font-family:var(--fonte); }
+  textarea { resize:vertical; min-height:62px; line-height:1.5; }
+  input.t:focus, textarea:focus, select:focus { outline:none; border-color:var(--lima); }
+  .linha2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .acoes { display:flex; gap:8px; margin-top:14px; flex-wrap:wrap; }
+  .btn { background:var(--lima-esc); color:var(--lima); border:1px solid #0b7a5c; border-radius:8px;
+         padding:8px 13px; font-size:13.2px; font-weight:700; cursor:pointer; font-family:var(--fonte); }
+  .btn.sec { background:#161b22; color:var(--suave); border-color:var(--linha); }
+  .btn:hover { filter:brightness(1.15); }
+
+  .cenarios { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:8px; }
+  .cenario { background:#0d1117; border:1px solid var(--linha); border-radius:8px;
+             padding:9px 11px; cursor:pointer; text-align:left; font-family:var(--fonte); }
+  .cenario:hover { border-color:var(--lima); }
+  .cenario b { display:block; color:var(--branco); font-size:13px; }
+  .cenario span { font-size:11.8px; color:var(--suave); }
+
+  /* registro do lead */
+  .registro { display:none; margin-top:12px; border:1px solid #0b7a5c; background:var(--lima-fundo);
+              border-radius:8px; padding:12px; }
+  .registro.on { display:block; }
+  .registro .cab { font-size:11px; text-transform:uppercase; letter-spacing:1.4px;
+                   color:var(--lima); font-weight:800; margin-bottom:7px; }
+  table.reg { width:100%; border-collapse:collapse; font-size:13px; }
+  table.reg td { padding:4px 0; border-bottom:1px solid rgba(37,211,102,.16); vertical-align:top; }
+  table.reg td:first-child { color:var(--suave); width:38%; }
+  table.reg td:last-child { color:var(--branco); font-weight:600; }
+  .rodape-l { margin-top:12px; font-size:12.4px; color:var(--fraco); line-height:1.5;
+              border-top:1px solid var(--linha); padding-top:11px; }
+  .tag { display:inline-block; background:var(--fundo); border:1px solid var(--linha);
+         color:var(--suave); border-radius:5px; padding:2px 7px; font-size:11.4px; margin:0 4px 4px 0; }
+</style>
+</head>
+<body>
+<div class="grade">
+
+  <!-- ============ telefone ============ -->
+  <div>
+    <div class="tel">
+      <div class="tel-topo">
+        <div class="avatar" id="av">JF</div>
+        <div>
+          <div class="tel-nome" id="nomeTopo">Carregando…</div>
+          <div class="tel-status" id="statusTopo">online</div>
+        </div>
+      </div>
+      <div class="janela" id="janela"></div>
+      <div class="campo">
+        <input id="entrada" placeholder="Escreva como o cliente escreveria…" autocomplete="off">
+        <button id="enviar">Enviar</button>
+      </div>
+      <div class="atalhos" id="atalhos"></div>
+    </div>
+    <div class="registro" id="registro">
+      <div class="cab">Lead registrado na planilha</div>
+      <table class="reg">
+        <tr><td>Nome</td><td id="rNome">—</td></tr>
+        <tr><td>Telefone</td><td id="rTel">—</td></tr>
+        <tr><td>Motivo</td><td id="rMotivo">—</td></tr>
+        <tr><td>Recebido às</td><td id="rHora">—</td></tr>
+        <tr><td>Origem</td><td id="rOrigem">WhatsApp</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============ painel ============ -->
+  <div>
+    <div class="painel">
+      <h1>Demonstração de atendimento automático no WhatsApp</h1>
+      <p class="sub">Ambiente de demonstração da JF Dev. Os dados das empresas exemplo são
+      fictícios e servem para mostrar o funcionamento — antes de apresentar, troque pelos
+      dados reais do cliente no painel <b>Personalizar</b>.</p>
+    </div>
+
+    <div class="grade2">
+      <div class="painel">
+        <h2>Roteiro da demo (5 minutos)</h2>
+        <div class="passo"><div class="min">1</div><div class="txt"><b>Abra com a pergunta real dele</b>
+          <span>Clique no atalho da pergunta que o cliente faria. Deixa ele ver que você entendeu o problema dele, não um roteiro genérico.</span></div><div class="tempo">1 min</div></div>
+        <div class="passo"><div class="min">2</div><div class="txt"><b>Mude para fora do horário</b>
+          <span>Clica em “São 22h”. O bot passa a dizer que está fora do expediente e quem responde amanhã. É o ponto da conversa.</span></div><div class="tempo">1 min</div></div>
+        <div class="passo"><div class="min">3</div><div class="txt"><b>Faça o atendimento se formar</b>
+          <span>Peça o contato como o cliente pediria. O bot coleta nome, telefone e motivo, e a planilha aparece embaixo do telefone.</span></div><div class="tempo">1 min</div></div>
+        <div class="passo"><div class="min">4</div><div class="txt"><b>Mostre a retomada automática</b>
+          <span>Clica em “Lead ficou sem resposta”. Ele vê o próprio bot tendo o lead dele registrado: é o que nenhum concorrente da cidade oferece.</span></div><div class="tempo">1 min</div></div>
+        <div class="passo"><div class="min">5</div><div class="txt"><b>Fale do preço só agora</b>
+          <span>Sexta, R$ 690 de implantação e R$ 99 por mês. Diga que é o mesmo servidor para vários clientes e que ele só paga mensagem acima de mil por mês.</span></div><div class="tempo">1 min</div></div>
+        <div class="rodape-l">
+          <b style="color:var(--suave)">Não prometa:</b> número de cliente, de venda ou de faturamento. O que se
+          promete é resposta fora do horário e registro do lead. Isso se sustenta e não dá
+          argumento para o cliente voltar contra você depois.
+        </div>
+      </div>
+
+      <div>
+        <div class="painel">
+          <h2>Cenários</h2>
+          <div class="cenarios">
+            <button class="cenario" data-cen="manha"><b>São 9h</b><span>horário comercial, bot responde direto</span></button>
+            <button class="cenario" data-cen="noite"><b>São 22h</b><span>fora do expediente, entra o aviso</span></button>
+            <button class="cenario" data-cen="retomada"><b>Lead sem resposta</b><span>o bot retoma sozinho depois</span></button>
+            <button class="cenario" data-cen="humano"><b>Chamar atendente</b><span>passa a conversa para uma pessoa</span></button>
+            <button class="cenario" data-cen="zera"><b>Recomeçar</b><span>zera a conversa e a planilha</span></button>
+          </div>
+        </div>
+
+        <div class="painel">
+          <h2>Personalizar com o cliente</h2>
+          <div class="presets" id="presets"></div>
+          <label>Establishcimento</label>
+          <input class="t" id="fNeg">
+          <label>Quem responde</label>
+          <input class="t" id="fDono">
+          <div class="linha2">
+            <div><label>Horário</label><input class="t" id="fHorario"></div>
+            <div><label>Endereço</label><input class="t" id="fEnd"></div>
+          </div>
+          <label>Serviços e preços <span style="text-transform:none;letter-spacing:0;color:var(--fraco)">(um por linha: nome = valor)</span></label>
+          <textarea id="fServicos"></textarea>
+          <label>Pergunta frequente e resposta <span style="text-transform:none;letter-spacing:0;color:var(--fraco)">(uma por linha: pergunta = resposta)</span></label>
+          <textarea id="fFaq"></textarea>
+          <div class="acoes">
+            <button class="btn" id="salvar">Aplicar na conversa</button>
+            <button class="btn sec" id="exportar">Baixar demo com os dados</button>
+          </div>
+          <div class="rodape-l">
+            <b style="color:var(--suave)">Baixar demo com os dados</b> salva um HTML
+            independente com o nome, os preços e as respostas daquele cliente. Você manda no
+            WhatsApp depois da reunião, e ele abre no celular dele e mexe à vontade. É o
+            lembrete de que a conversa existiu.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+/* =========================================================
+   CONFIGURAÇÃO DO NEGÓCIO
+   Os presets usam nomes fictícios. Troque pelo cliente real no
+   painel Personalizar antes de apresentar.
+   ========================================================= */
+
+const PRESETS = {
+  odonto: {
+    rotulo: "Clínica odontológica",
+    negocio: "Clínica Odontológica Boa Sorriso",
+    dono: "Dra. Ana",
+    iniciais: "BS",
+    horario: "segunda a sexta, das 8h às 18h; sábado, das 8h às 12h",
+    endereco: "R. das Flores, 120 — Centro",
+    fora: "a Dra. Ana começa às 8h de amanhã",
+    servicos: ["Consulta com avaliação = R$ 150", "Limpeza dental = R$ 180",
+                "Clareamento = R$ 450", "Tratamento de canal = R$ 750"],
+    faq: [["aceita convênio", "Trabalhamos com convênios mais usados da região. Na hora de marcar é só dizer qual é o seu que eu confiro a cobertura."],
+          ["tem estacionamento", "Tem estacionamento na rua, em frente à clínica. Nos horários mais cheios fica apertado, então vale vir com um pouco de folga."]],
+    atalhos: ["quanto é a limpeza?", "você abre sábado?", "aceita convênio?",
+              "quero marcar uma consulta", "falar com uma pessoa"]
+  },
+  clinica: {
+    rotulo: "Clínica médica",
+    negocio: "Clínica Médica Vida",
+    dono: "Dr. Renato",
+    iniciais: "CV",
+    horario: "segunda a sexta, das 7h às 19h; sábado, das 8h às 12h",
+    endereco: "Av. Central, 840 — Sala 3",
+    fora: "o Dr. Renato recebe amanhã a partir das 7h",
+    servicos: ["Consulta particular = R$ 200", "Retorno em 15 dias = R$ 120",
+                "Abertura de ficha = R$ 180"],
+    faq: [["atende por convênio", "Aceitamos os principais convênios. Diga qual o seu no atendimento que confirmo se é cobertura ou particular."],
+          ["precisa de exame antes", "Depende da consulta. O médico avalia primeiro e, se precisar, pede exame. Nada é cobrado sem você autorizar."]],
+    atalhos: ["atende por convênio?", "qual o preço da consulta?", "abre amanhã de manhã?",
+              "quero falar com o médico", "falar com uma pessoa"]
+  },
+  delivery: {
+    rotulo: "Restaurante com delivery",
+    negocio: "Pizzaria do Portão",
+    dono: "equipe da loja",
+    iniciais: "PP",
+    horario: "terça a domingo, das 18h às 23h30",
+    endereco: "Rua da Praça, 45 — Centro",
+    fora: "a cozinha abre amanhã às 18h",
+    servicos: ["Pizza média = R$ 55", "Pizza grande = R$ 70", "Marmita do dia = R$ 28"],
+    faq: [["faz delivery", "Fazemos delivery próprio, sem aplicativo. O frete é R$ 6 e a entrega sai em até 40 minutos."],
+          ["aceita pix", "Aceitamos Pix, cartão e dinheiro na entrega."]],
+    atalhos: ["faz delivery?", "quanto custa a pizza grande?", "aceita pix?",
+              "quero fazer um pedido", "falar com uma pessoa"]
+  }
+};
+
+let CFG = JSON.parse(JSON.stringify(PRESETS.odonto));
+let cena = "manha";
+let fase = "inicio";       // inicio | nome | telefone | motivo | pronto
+let lead = {};
+let mensagemCount = 0;
+
+/* =========================================================
+   ESTADO DA TELA
+   ========================================================= */
+
+const el = id => document.getElementById(id);
+const janela = () => el("janela");
+
+function hhmm(d) {
+  const h = String(d.getHours()).padStart(2, "0");
+  const m = String(d.getMinutes()).padStart(2, "0");
+  return h + ":" + m;
+}
+
+function horaAgora() {
+  // No cenário de fora do expediente, o relógio do bot mostra 22h, que é o
+  // ponto que o cliente precisa ver. Fora dele, mostra a hora real.
+  return cena === "noite" ? "22:04" : hhmm(new Date());
+}
+
+function agoraReal() { return hhmm(new Date()); }
+
+function bolha(texto, quem) {
+  const d = document.createElement("div");
+  d.className = "msg " + quem;
+  const h = document.createElement("div");
+  h.textContent = texto;
+  const t = document.createElement("div");
+  t.className = "hora";
+  t.textContent = horaAgora();
+  d.appendChild(h); d.appendChild(t);
+  janela().appendChild(d);
+  janela().scrollTop = janela().scrollHeight;
+  return d;
+}
+
+function digitando() {
+  const d = document.createElement("div");
+  d.className = "digitando";
+  d.innerHTML = "<i></i><i></i><i></i>";
+  janela().appendChild(d);
+  janela().scrollTop = janela().scrollHeight;
+  return d;
+}
+
+function espera(remove, ms, depois) {
+  setTimeout(() => { if (remove && remove.parentNode) remove.remove(); depois(); }, ms);
+}
+
+function aviso(txt) {
+  const d = document.createElement("div");
+  d.className = "aviso";
+  d.textContent = txt;
+  janela().appendChild(d);
+  janela().scrollTop = janela().scrollHeight;
+}
+
+function dia(txt) {
+  const d = document.createElement("div");
+  d.className = "dia";
+  d.textContent = txt;
+  janela().appendChild(d);
+}
+
+
+/* Atalhos são por segmento. Depois de aplicar dados de um cliente, os
+   botões têm que acompanhar o segmento novo — e não podem vir do preset
+   anterior. A escolha é pelo conteúdo digitado no formulário: se o
+  Establishment ou algum serviço case com um preset, herda os atalhos
+   daquele preset; senão usa atalhos genéricos, que funcionam em qualquer
+   negócio. */
+const ATALHOS_GENERICOS = [
+  "quanto custa?", "vocês abrem amanhã?", "qual o endereço?",
+  "quero marcar", "falar com uma pessoa"
+];
+
+function atalhosDoPreset(base, cfg) {
+  const alvo = norm(cfg.negocio + " " + cfg.servicos.join(" ") + " " +
+                    Object.keys(cfg.faq).join(" "));
+  let melhor = null, melhorNota = 0;
+  Object.keys(base).forEach(k => {
+    const pre = base[k];
+    if (!pre.rotulo) return;                 // é a config já aplicada, não preset
+    // Compara o rotulo do preset com o nome digitado. Termos de 5+ letras
+    // evitam "clínica" casando com "odontológica" por accidento: sem esse
+    // corte, toda clínica herdava os atalhos de odontologia.
+    const termos = norm(pre.rotulo).split(" ").filter(p => p.length >= 5);
+    const nota = termos.filter(p => alvo.includes(p)).length;
+    if (nota > melhorNota) { melhorNota = nota; melhor = pre; }
+  });
+  return (melhor && melhorNota >= 1) ? melhor.atalhos : ATALHOS_GENERICOS;
+}
+
+/* =========================================================
+   BOT
+   ========================================================= */
+
+const norm = s => (s || "").toLowerCase()
+  .normalize("NFD").replace(/[̀-ͯ]/g, "")
+  .replace(/[!?.,;:]/g, " ")
+  .replace(/\s+/g, " ").trim();
+
+function primeiro(preg) { return CFG.servicos.find(s => norm(s).includes(preg)); }
+function valor(s) { const p = s.split("="); return (p[1] || "").trim(); }
+function nomeDe(s) { return s.split("=")[0].trim(); }
+
+function foraDoHorario() { return cena === "noite"; }
+
+/* SEM ARTIGO antes do nome do negócio, de propósito.
+
+   Tentei acertar e não dá: o artigo depende do GÊNERO do nome — "da
+   oficina", "do óleo", "a água", "do escape" — e gênero não se infere da
+   letra inicial. Três versões desta função erraram de 6 a 9 casos em 16
+   nomes de estabelecimento, sempre na primeira frase, que é onde o
+   cliente mais olha. Eliminar o artigo é mais barato que adivinhar:
+   "atendimento automático de Nome" funciona em qualquer nome, nos dois
+   gêneros. */
+
+function saudacaoBot() {
+  const base = "Oi! Aqui é o atendimento automático de " + CFG.negocio + ".";
+  if (foraDoHorario()) {
+    return base + " Agora estamos fora do nosso horário (" + CFG.horario +
+           "). Eu já anoto sua mensagem e " + CFG.fora + ". " +
+           "Se for urgência, me manda uma palavra e eu te aviso o que fazer.";
+  }
+  return base + " Me diz o que você precisa e eu resolvo. Para falar com " +
+         CFG.dono + ", é só pedir.";
+}
+
+function responde(texto) {
+  const t = norm(texto);
+
+  // coleta de dados: o bot pergunta, na ordem, nome, telefone e motivo
+  if (fase === "nome")  { lead.nome = texto.trim(); fase = "telefone";
+    return "Obrigado, " + nomeCurto(lead.nome) + ". E o seu WhatsApp, com DDD? Para te chamar de volta."; }
+  if (fase === "telefone") {
+    const dig = (texto.match(/\d/g) || []).join("");
+    if (dig.length < 10) return "Esse número ficou incompleto. Me manda de novo, com DDD e os 9 dígitos, que eu confiro.";
+    lead.telefone = texto.trim(); fase = "motivo";
+    return "Anotado. E o que você procura aqui? Se for marcar horário, diga o dia e o período que prefere.";
+  }
+  if (fase === "motivo") {
+    lead.motivo = texto.trim(); fase = "pronto"; mostraRegistro();
+    return "Pronto, " + nomeCurto(lead.nome) + ". Já deixei tudo registrado aqui. " +
+           (foraDoHorario() ? CFG.fora + " te chama de volta. " : CFG.dono + " te chama ainda hoje. ") +
+           "Se precisar agora, é só pedir para falar com uma pessoa.";
+  }
+
+  // encaminhamento para humano
+  if (/(humano|pessoa|atendente|ninguem|alguem|nao tem ninguem)/.test(t))
+    return "Chamando " + CFG.dono + "…";
+
+  if (/^(oi|ola|bom dia|boa tarde|boa noite|teste|eae|e ai)/.test(t)) return saudacaoBot();
+
+  // preço e serviço
+  if (/(preco|valor|quanto|custa|tabela|valores)/.test(t)) {
+    const achou = CFG.servicos.find(s => {
+      const nome = norm(nomeDe(s)).split(" ").filter(p => p.length > 3);
+      return nome.some(p => t.includes(p));
+    });
+    if (achou) return nomeDe(achou) + " fica " + valor(achou) + ". Quer que eu já anote seu nome para marcar?";
+    if (/(tudo|liste|opcoes|menu|o que voces tem|o que voces fazem)/.test(t))
+      return "Hoje são estes: " + CFG.servicos.map(s => nomeDe(s) + " (" + valor(s) + ")").join(", ") + ". Quer algum desses?";
+    return "Isso depende do que você precisa. Hoje temos: " +
+           CFG.servicos.map(s => nomeDe(s) + " (" + valor(s) + ")").join(", ") +
+           ". Diga qual e eu te explico.";
+  }
+  if (/(servico|tratamento|procedimento|fazem|especialidade|trabalham com)/.test(t))
+    return "A gente trabalha com " + CFG.servicos.map(s => nomeDe(s).toLowerCase()).join(", ") + ". Qual deles é o seu caso?";
+
+  // horário
+  if (/(horario|abre|fecha|funciona|abrem|domingo|sabado|feriado|amanha)/.test(t)) {
+    if (foraDoHorario())
+      return "Agora são 22h, então estamos fechados. Nosso horário é " + CFG.horario + ", e " + CFG.fora + ".";
+    return "Atendemos " + CFG.horario + ". Quer que eu reserve um horário para você?";
+  }
+
+  // endereço
+  if (/(endereco|onde fica|localiza|localizacao|como chego|passa qual)/.test(t))
+    return "Estamos na " + CFG.endereco + ". Quer que eu mande a localização agora?";
+
+  // contato
+  if (/(telefone|numero|contato de voces|whats)/.test(t))
+    return "Nosso WhatsApp é este mesmo. O " + CFG.dono + " atende por aqui.";
+
+  // agendamento
+  if (/(agendar|marcar|consulta|quero vir|reservar|horario para)/.test(t)) {
+    fase = "nome";
+    return "Marco. Antes de te chamar, me passa teu nome, para eu não te perguntar de novo. É só o primeiro nome.";
+  }
+
+  // FAQ configurada
+  const faq = CFG.faq.find(f => t.includes(norm(f[0]).split(" ")[0]) && t.includes(norm(f[0]).split(" ").pop()));
+  if (faq) return faq[1];
+  const meio = CFG.faq.find(f => norm(f[0]).includes(t) || t.includes(norm(f[0])));
+  if (meio) return meio[1];
+
+  // não reconheceu: oferece as opções, em vez de devolver erro
+  return "Deixa eu te ajudar melhor: posso informar preços, horário, endereço, " +
+         "marcar um horário ou registrar seu contato para " + CFG.dono + " te chamar. O que você precisa?";
+}
+
+function nomeCurto(n) {
+  const p = String(n || "").trim().split(/\s+/)[0];
+  return p ? p.charAt(0).toUpperCase() + p.slice(1) : "tudo certo";
+}
+
+/* =========================================================
+   REGISTRO DO LEAD
+   ========================================================= */
+
+function mostraRegistro() {
+  el("rNome").textContent = lead.nome || "—";
+  el("rTel").textContent = lead.telefone || "—";
+  el("rMotivo").textContent = lead.motivo || "—";
+  el("rHora").textContent = agoraReal();
+  el("registro").classList.add("on");
+}
+
+/* =========================================================
+   CENÁRIOS
+   ========================================================= */
+
+function zera() {
+  janela().innerHTML = "";
+  fase = "inicio"; lead = {}; mensagemCount = 0;
+  el("registro").classList.remove("on");
+  dia("hoje");
+  bolha(saudacaoBot(), "bot");
+  atualizaTopo();
+}
+
+function atualizaTopo() {
+  el("nomeTopo").textContent = CFG.negocio;
+  el("av").textContent = CFG.iniciais;
+  const s = el("statusTopo");
+  if (foraDoHorario()) { s.textContent = "fora do horário · " + CFG.dono + " responde amanhã";
+                         s.classList.add("fora"); }
+  else { s.textContent = "atendimento automático · responde na hora"; s.classList.remove("fora"); }
+}
+
+function cenario(nome) {
+  if (nome === "manha") { cena = "manha"; atualizaTopo();
+    aviso("Cenário: agora são 9h, dentro do horário."); return; }
+  if (nome === "noite") { cena = "noite"; atualizaTopo();
+    aviso("Cenário: agora são 22h. Repare que o bot avisa que está fora do expediente.");
+    const d = digitando(); espera(d, 900, () => bolha(saudacaoBot(), "bot")); return; }
+  if (nome === "retomada") {
+    aviso("Cenário: o lead mandou mensagem e ficou sem resposta. O bot retoma sozinho 30 minutos depois.");
+    const d = digitando();
+    espera(d, 1000, () => {
+      const quem = lead.nome ? nomeCurto(lead.nome) + ", " : "";
+      bolha(quem + "tudo bem? Vi que ficou por aqui sem resposta. Se ainda quiser falar, me diz aqui que eu passo para " +
+            CFG.dono + " agora.", "bot");
+      bolha("Pode deixar, vi aqui. Obrigado!", "eu");
+    });
+    return;
+  }
+  if (nome === "humano") {
+    aviso("Cenário: o cliente pediu para falar com uma pessoa. O bot repassa na hora.");
+    const d = digitando();
+    espera(d, 900, () => {
+      bolha("Chamando " + CFG.dono + "…", "bot");
+      const d2 = digitando();
+      espera(d2, 1400, () => bolha("Oi! Sou " + CFG.dono + ". Pode falar, te escuto.", "bot"));
+    });
+    return;
+  }
+  zera();
+}
+
+/* =========================================================
+   ENTRADA
+   ========================================================= */
+
+function envia() {
+  const campo = el("entrada");
+  const texto = campo.value.trim();
+  if (!texto) return;
+  campo.value = "";
+  bolha(texto, "eu");
+  mensagemCount++;
+  const d = digitando();
+  // tempo de resposta: rápido dentro do horário, com hesitação de noite
+  espera(d, foraDoHorario() ? 900 : 650, () => {
+    const r = responde(texto);
+    bolha(r, "bot");
+    if (fase === "pronto") { /* registro já mostrado */ }
+  });
+}
+
+el("enviar").addEventListener("click", envia);
+el("entrada").addEventListener("keydown", e => { if (e.key === "Enter") envia(); });
+
+document.querySelectorAll(".cenario").forEach(b => {
+  b.addEventListener("click", () => cenario(b.dataset.cen));
+});
+
+/* =========================================================
+   PAINEL DE PERSONALIZAÇÃO
+   ========================================================= */
+
+function preencheFormulario() {
+  el("fNeg").value = CFG.negocio;
+  el("fDono").value = CFG.dono;
+  el("fHorario").value = CFG.horario;
+  el("fEnd").value = CFG.endereco;
+  el("fServicos").value = CFG.servicos.join("\n");
+  el("fFaq").value = CFG.faq.map(f => f[0] + " = " + f[1]).join("\n");
+}
+
+function aplicaFormulario() {
+  // O formulário manda sempre. CFG.dono guardava o dono do preset e vazava
+  // para o cliente seguinte: trocar só o nome do estabelecimento deixava
+  // "Para falar com Dra. Ana" na demo de uma fisioterapia. Campo vazio aqui
+  // significa "não sei", e a resposta honesta é "a equipe".
+  CFG.negocio = el("fNeg").value.trim() || CFG.negocio;
+  CFG.dono = el("fDono").value.trim() || "a equipe";
+  CFG.horario = el("fHorario").value.trim() || CFG.horario;
+  CFG.endereco = el("fEnd").value.trim() || CFG.endereco;
+  CFG.iniciais = (CFG.negocio.match(/\b[A-ZÀ-Ý]/g) || []).slice(0, 2).join("").toUpperCase() || "JF";
+  const sv = el("fServicos").value.split("\n").map(s => s.trim()).filter(Boolean);
+  if (sv.length) CFG.servicos = sv;
+  const fq = el("fFaq").value.split("\n").map(s => s.trim()).filter(Boolean)
+    .map(linha => {
+      const p = linha.split("=");
+      return p.length > 1 ? [p[0].trim(), p.slice(1).join("=").trim()] : null;
+    }).filter(Boolean);
+  if (fq.length) CFG.faq = fq;
+  // Os atalhos vêm do preset. Sem refazer aqui, os botões continuavam do
+  // preset anterior: uma clínica veterinária oferecia "faz delivery?" e
+  // "quanto custa a pizza grande?", que é o tipo de detalhe que o cliente
+  // nota na hora.
+  CFG.atalhos = atalhosDoPreset(PRESETS, CFG);
+  montaAtalhos();
+  preencheFormulario();
+  zera();
+  aviso("Dados aplicados. A conversa recomeçou com as informações desse cliente.");
+}
+
+el("salvar").addEventListener("click", aplicaFormulario);
+
+/* Ao trocar o estabelecimento, limpa "quem responde" se o campo ainda
+   tiver o nome do preset. Sem isso, "Para falar com Dra. Ana" aparece na
+   demo da clínica seguinte — o defeito mais visível que já teve nesta
+   página, porque aparece na primeira frase. */
+el("fNeg").addEventListener("input", () => {
+  const atual = el("fDono").value.trim();
+  const dePreset = Object.keys(PRESETS)
+    .some(k => PRESETS[k].dono && PRESETS[k].dono === atual);
+  if (dePreset) el("fDono").value = "";
+});
+
+function montaPresets() {
+  const box = el("presets");
+  box.innerHTML = "";
+  Object.keys(PRESETS).forEach(k => {
+    const b = document.createElement("button");
+    b.className = "preset";
+    b.textContent = PRESETS[k].rotulo;
+    b.addEventListener("click", () => {
+      CFG = JSON.parse(JSON.stringify(PRESETS[k]));
+      cena = "manha";
+      box.querySelectorAll(".preset").forEach(x => x.classList.remove("on"));
+      b.classList.add("on");
+      preencheFormulario();
+      zera();
+      aviso("Exemplo de " + PRESETS[k].rotulo.toLowerCase() + " carregado. Os dados são fictícios: troque antes de apresentar.");
+      montaAtalhos();
+    });
+    box.appendChild(b);
+  });
+  box.firstChild.classList.add("on");
+}
+
+function montaAtalhos() {
+  const box = el("atalhos");
+  box.innerHTML = "";
+  (CFG.atalhos || ATALHOS_GENERICOS).forEach(q => {
+    const b = document.createElement("button");
+    b.className = "atalho";
+    b.textContent = q;
+    b.addEventListener("click", () => { el("entrada").value = q; envia(); });
+    box.appendChild(b);
+  });
+}
+
+function exportar() {
+  aplicaFormulario();
+  const clone = { ...CFG };
+  delete clone.rotulo; delete clone.iniciais;
+  const doc = document.documentElement.outerHTML;
+  const html = doc.replace(
+    /const PRESETS = \{[\s\S]*?\n\};/,
+    "const PRESETS = { demonstracao: " + JSON.stringify(clone, null, 2) + " };"
+  ).replace(/let CFG = JSON\.parse\(JSON\.stringify\(PRESETS\.\w+\)\);/,
+               "let CFG = JSON.parse(JSON.stringify(PRESETS.demonstracao));")
+  .replace(/montaPresets\(\);/, "");
+  const blob = new Blob(["<!DOCTYPE html>\n" + html], { type: "text/html;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "demo-" + CFG.negocio.toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + ".html";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+el("exportar").addEventListener("click", exportar);
+
+/* =========================================================
+   INÍCIO
+   ========================================================= */
+
+montaPresets();
+preencheFormulario();
+montaAtalhos();
+zera();
+</script>
+</body>
+</html>
