@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-10-01T16:10:51Z",
+  "gerado_em": "2026-10-11T23:17:12Z",
   "modulos": [
     {
       "id": "rotinas",
@@ -177,7 +177,7 @@
     {
       "id": "20261001-1610-deploy-que-verifica-antes-de-publicar",
       "modulo": "conteudo",
-      "tipo": "relatorio",
+      "tipo": "registro",
       "titulo": "Deploy que verifica antes de publicar",
       "resumo": "O worktree do git é a raiz do servidor web. Salvar arquivo no lugar já publica.",
       "publicado_em": "2026-10-01T16:10:51Z",
@@ -198,7 +198,7 @@
     {
       "id": "20261001-1610-publicacao-automatizada-etapa-por-etapa",
       "modulo": "conteudo",
-      "tipo": "relatorio",
+      "tipo": "registro",
       "titulo": "Publicação automatizada, etapa por etapa",
       "resumo": "Publicar não é postar. São sete etapas, e qualquer uma delas pode deixar o agente publicando algo errado num perfil real.",
       "publicado_em": "2026-10-01T16:10:51Z",
@@ -219,7 +219,7 @@
     {
       "id": "20261001-1610-visualizador-de-imagem-em-pop-up",
       "modulo": "conteudo",
-      "tipo": "relatorio",
+      "tipo": "registro",
       "titulo": "Visualizador de imagem em pop-up",
       "resumo": "Uma miniatura de 180 pixels não diz nada. Baixar o arquivo para enxergar o detalhe é o tipo de atrito que faz a pessoa desistir antes de ver.",
       "publicado_em": "2026-10-01T16:10:51Z",

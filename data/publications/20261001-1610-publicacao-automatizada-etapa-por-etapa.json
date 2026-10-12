@@ -1,7 +1,7 @@
 {
   "id": "20261001-1610-publicacao-automatizada-etapa-por-etapa",
   "modulo": "conteudo",
-  "tipo": "relatorio",
+  "tipo": "registro",
   "titulo": "Publicação automatizada, etapa por etapa",
   "resumo": "Publicar não é postar. São sete etapas, e qualquer uma delas pode deixar o agente publicando algo errado num perfil real.",
   "publicado_em": "2026-10-01T16:10:51Z",
@@ -21,5 +21,5 @@
   "log": null,
   "schema": 1,
   "criado_em": "2026-10-01T16:10:51Z",
-  "atualizado_em": "2026-10-01T16:10:51Z"
+  "atualizado_em": "2026-10-06T23:42:25Z"
 }
