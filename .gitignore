@@ -4,3 +4,6 @@ __pycache__/
 
 # Credencial do deploy: vive em ~/.site_auth, nunca no repositorio
 .site_auth
+
+# Midia: o repo da vitrine e publico e nao publica midia nossa.
+media/

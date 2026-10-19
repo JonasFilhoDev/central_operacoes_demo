@@ -1,0 +1,15 @@
+{
+  "id": "20261019-1510-aviso-de-falha-chegava-vazio",
+  "titulo": "O aviso de falha chegava vazio",
+  "resumo": "Uma rotina agendada publica conteúdo em janelas fixas do dia. Numa dessas janelas o provedor do modelo respondeu com erro 504 depois de trinta minutos de execução, e a janela passou sem publicação.",
+  "tags": [
+    "tecnica",
+    "implementacao",
+    "integracoes"
+  ],
+  "corpo": "# O aviso de falha chegava vazio\n\nUma rotina agendada publica conteúdo em janelas fixas do dia. Numa dessas janelas o provedor do modelo respondeu com erro 504 depois de trinta minutos de execução, e a janela passou sem publicação.\n\nA falha em si é comum em quem depende de API: provedor cai, chamada estoura. O problema estava na comunicação dela. O agendador grava cada entrega numa tabela, e ali as notificações de falha daquele dia estavam com estado \"entregue\", marcadas como aviso de falha e com zero caracteres de conteúdo. Oito delas. O aviso saiu, chegou ao canal, e não dizia nada.\n\nMensagem vazia não parece alarme. Parece falha de digitação, e é ignorada.\n\n## O que passou a existir\n\nUma rotina de fim de dia que relê as janelas, compara com o que foi publicado e fecha a conta do dia. Ela faz três coisas:\n\n1. diz qual janela ficou sem publicação;\n2. refaz a janela perdida, quando ainda faz sentido;\n3. lista as rotinas que falharam no dia.\n\n## As decisões que sustentam a rotina\n\n**Falha de leitura não dispara nada.** Se a consulta à API falhar, a rotina sai com erro em vez de refazer uma janela que talvez já tenha sido publicada. Republicar por engano cria conteúdo duplicado, e duplicado também não tem desfazer.\n\n**Uma janela por rodada, a mais recente.** A rotina recupera apenas a janela mais próxima do horário atual. Refazer três janelas de uma vez encheria o perfil com material fora de ordem.\n\n**Recuperar tem prazo.** A janela só é considerada vencida depois do horário mais uma tolerância, para não competir com a execução normal que ainda está em andamento.\n\n**O que passou do prazo vira relatório.** Republicar uma janela que era das dez da manhã às dez da noite é decisão de quem assina o perfil, não da rotina. Publicação não se desfaz, então a automação informa e espera.\n\nAviso que chega vazio não avisa: ele registra que alguém tentou.",
+  "midias": [],
+  "capa": null,
+  "publicado_em": "2026-10-19T15:29:11Z",
+  "origem": "vitrine"
+}
