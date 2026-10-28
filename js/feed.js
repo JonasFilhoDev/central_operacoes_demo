@@ -129,6 +129,9 @@
           html += `<table><thead><tr>${cols.map((c) => `<th>${inline(c)}</th>`).join('')}</tr></thead><tbody>`;
           tabela = cols;
         }
+        // pula a linha separadora (| --- | --- |). Sem este i++, ela cai no ramo
+        // de linha de tabela abaixo e aparece como uma linha visível de "---".
+        i++;
         continue;
       }
       if (tabela && /^\|/.test(l.trim())) {

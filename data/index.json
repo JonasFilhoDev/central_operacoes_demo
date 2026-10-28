@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "gerado_em": "2026-10-19T14:25:07Z",
+  "gerado_em": "2026-10-28T01:50:12Z",
   "modulos": [
     {
       "id": "rotinas",
@@ -68,7 +68,7 @@
   ],
   "subsites": [],
   "stats": {
-    "total": 7,
+    "total": 8,
     "por_modulo": {
       "rotinas": 0,
       "conteudo": 3,
@@ -76,11 +76,11 @@
       "trafego": 0,
       "gestao": 0,
       "briefings": 0,
-      "integracoes": 4,
+      "integracoes": 5,
       "automacoes": 0,
       "infra": 0
     },
-    "com_pagina": 7,
+    "com_pagina": 8,
     "com_midia": 0,
     "duracao_media_s": 4.2,
     "costo_total_usd": null,
@@ -251,7 +251,7 @@
       "tipo": "analise",
       "titulo": "Integração com o ClickUp via Composio",
       "resumo": "A Central de Operações (batcaverna) agora se conecta ao ClickUp através do **Composio**, uma camada de integração que expõe 1.000+ toolkits (40 mil ferramentas) via uma única conta autenticada.",
-      "publicado_em": "2026-10-19T15:29:11Z",
+      "publicado_em": "2026-10-28T02:11:57Z",
       "pagina_dedicada": true,
       "tags": [
         "tecnica",
@@ -273,7 +273,7 @@
       "tipo": "analise",
       "titulo": "Três conferências antes de uma arte ir ao ar",
       "resumo": "As peças de arte nascem de HTML renderizado num navegador sem tela. O mesmo arquivo que parece certo no editor pode sair com o texto atrás de uma camada, fora da moldura ou no tamanho errado, e nada disso aparece enquant",
-      "publicado_em": "2026-10-19T15:29:11Z",
+      "publicado_em": "2026-10-28T02:11:57Z",
       "pagina_dedicada": true,
       "tags": [
         "tecnica",
@@ -295,7 +295,29 @@
       "tipo": "analise",
       "titulo": "O aviso de falha chegava vazio",
       "resumo": "Uma rotina agendada publica conteúdo em janelas fixas do dia. Numa dessas janelas o provedor do modelo respondeu com erro 504 depois de trinta minutos de execução, e a janela passou sem publicação.",
-      "publicado_em": "2026-10-19T15:29:11Z",
+      "publicado_em": "2026-10-28T02:11:57Z",
+      "pagina_dedicada": true,
+      "tags": [
+        "tecnica",
+        "implementacao",
+        "integracoes"
+      ],
+      "capa": null,
+      "n_midias": 0,
+      "tem_log": false,
+      "duracao_s": null,
+      "modelo": null,
+      "provedor": null,
+      "job": null,
+      "origem": "agente"
+    },
+    {
+      "id": "20261028-0230-plano-estudos-que-se-cobra",
+      "modulo": "integracoes",
+      "tipo": "analise",
+      "titulo": "Um plano de estudos que se cobra sozinho",
+      "resumo": "Plano em documento é fácil de escrever e difícil de cumprir: a pessoa lê uma vez, concorda com a lista e volta ao mesmo lugar na semana seguinte. Este é o registro de um plano de estudos que virou sistema, com calendário",
+      "publicado_em": "2026-10-28T02:11:57Z",
       "pagina_dedicada": true,
       "tags": [
         "tecnica",
